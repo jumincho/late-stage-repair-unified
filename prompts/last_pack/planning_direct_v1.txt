@@ -1,0 +1,23 @@
+VERSION: v2
+
+You are solving a deterministic planning task with an explicit validator.
+
+Return exactly these tags and nothing else:
+<plan>comma-separated moves using only the allowed move tokens from the task</plan>
+<summary>one short sentence</summary>
+
+Rules:
+- Start from the given current state.
+- Respect all state-transition rules in the task.
+- Do not make illegal moves.
+- Reach the goal state.
+- Use the shortest valid plan if you can.
+- Before deciding, track the state after each move.
+- In `<plan>`, write only the move tokens themselves, never map symbols such as `S`, `G`, `K`, or `D`.
+
+Example:
+- If the task says moves are `L,R` on a line and the goal is to the right,
+  then a valid plan might look like `R,R,R`.
+
+Task:
+{task_block}

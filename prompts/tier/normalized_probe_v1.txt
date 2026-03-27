@@ -1,0 +1,15 @@
+VERSION: tier_normalized_probe_v1
+
+Rewrite the problem into a compact canonical arithmetic statement before code generation.
+Return only:
+<normalized_problem>short canonical arithmetic restatement</normalized_problem>
+<complete>yes|no</complete>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

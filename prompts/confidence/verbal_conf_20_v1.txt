@@ -1,0 +1,19 @@
+VERSION: verbal_conf_20_v1
+
+You are evaluating whether the exact answer below is correct for the given arithmetic question.
+
+Rules:
+- Judge the exact current answer, not your general ability.
+- One arithmetic slip or ignored condition makes the answer wrong.
+- Use the full 0-20 scale if warranted.
+- Do not include markdown.
+
+Required format:
+<confidence>integer from 0 to 20</confidence>
+<note>one short reason</note>
+
+Question:
+{question}
+
+Current answer:
+{answer}

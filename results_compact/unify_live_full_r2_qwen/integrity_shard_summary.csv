@@ -1,0 +1,25 @@
+model_name,phase_name,module,surface_name,shard_name,manifest_rows,actual_rows,has_manifest,has_rows,completed_flag,row_match,duplicate_ids
+Qwen/Qwen2.5-7B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard01of04,379,379,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard02of04,379,379,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard03of04,379,379,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard04of04,378,378,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard01of04,121,121,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard02of04,121,121,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard03of04,121,121,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard04of04,120,120,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard01of04,379,379,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard02of04,379,379,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard03of04,379,379,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard04of04,378,378,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard01of04,121,121,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard02of04,121,121,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard03of04,121,121,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard04of04,120,120,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard01of04,96,96,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard02of04,96,96,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard03of04,96,96,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard04of04,93,93,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifbench,format,IFBench,ifbench_shard01of04,75,75,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifbench,format,IFBench,ifbench_shard02of04,75,75,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifbench,format,IFBench,ifbench_shard03of04,75,75,1,1,1,1,0
+Qwen/Qwen2.5-7B-Instruct,format_ifbench,format,IFBench,ifbench_shard04of04,75,75,1,1,1,1,0

@@ -1,0 +1,84 @@
+datasets:
+  gsm8k:
+    hf_candidates:
+      - path: openai/gsm8k
+        name: main
+        split: test
+      - path: gsm8k
+        name: main
+        split: test
+    task_type: numeric_open
+    question_field: question
+    answer_field: answer
+  gsm8k_train:
+    hf_candidates:
+      - path: openai/gsm8k
+        name: main
+        split: train
+      - path: gsm8k
+        name: main
+        split: train
+    task_type: numeric_open
+    question_field: question
+    answer_field: answer
+  strategyqa:
+    hf_candidates:
+      - path: google/boolq
+        name: null
+        split: validation
+      - path: ChilleD/StrategyQA
+        name: null
+        split: validation
+      - path: tasksource/strategy-qa
+        name: null
+        split: validation
+      - path: tasksource/strategy-qa
+        name: null
+        split: train
+    task_type: yes_no_open
+    question_field: question
+    answer_field: answer
+  arc_challenge:
+    hf_candidates:
+      - path: allenai/ai2_arc
+        name: ARC-Challenge
+        split: validation
+    task_type: multiple_choice
+    question_field: question
+    answer_field: answerKey
+    options_field: choices
+  svamp:
+    hf_candidates:
+      - path: ChilleD/SVAMP
+        name: null
+        split: test
+    task_type: numeric_open
+    question_field: question_concat
+    answer_field: Answer
+    id_field: ID
+  multiarith:
+    hf_candidates:
+      - path: ChilleD/MultiArith
+        name: null
+        split: test
+    task_type: numeric_open
+    question_field: question
+    answer_field: final_ans
+  asdiv:
+    hf_candidates:
+      - path: EleutherAI/asdiv
+        name: null
+        split: validation
+    task_type: numeric_open
+    question_field:
+      - body
+      - question
+    answer_field: answer
+  mawps:
+    hf_candidates:
+      - path: mwpt5/mawps
+        name: null
+        split: train
+    task_type: numeric_open
+    question_field: Question
+    answer_field: Answer

@@ -1,0 +1,15 @@
+VERSION: draft_tagged_v1
+
+Answer the arithmetic question.
+
+Rules:
+- Keep the reasoning minimal and observable.
+- Output exactly one final answer.
+- Do not include markdown.
+
+Required format:
+<answer>short final answer only</answer>
+<scratch>one short calculation sketch or decisive fact</scratch>
+
+Question:
+{question}

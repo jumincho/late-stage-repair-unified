@@ -1,0 +1,17 @@
+VERSION: eir_localize_probe_v1
+
+Preview whether the draft can be corrected by localizing one suspect step and backtracking.
+Return only:
+<suspect>most suspect step or assumption</suspect>
+<reason_type>arithmetic_slip|wrong_equation|missed_constraint|unit_rate_confusion|entity_swap|semantic_misread|unclear</reason_type>
+<backtrack_point>last reliable point if identifiable, else NONE</backtrack_point>
+<localized>yes|no</localized>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

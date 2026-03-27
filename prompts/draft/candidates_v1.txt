@@ -1,0 +1,30 @@
+VERSION: draft_candidates_v1
+
+Return valid JSON only.
+
+Generate up to {max_candidates} plausible candidate answers for the question. These are hypothesis options, not guaranteed correct answers.
+
+Requirements:
+- Include diverse plausible alternatives.
+- Avoid malformed or silly outputs.
+- Each candidate must be concise.
+
+JSON schema:
+{
+  "candidates": [
+    {
+      "option_id": "A",
+      "answer": "candidate answer",
+      "normalized_answer": "normalized form",
+      "source": "self",
+      "persona": "",
+      "short_rationale": "why a fallible model might pick it"
+    }
+  ]
+}
+
+Question:
+{question}
+
+Options:
+{options_block}

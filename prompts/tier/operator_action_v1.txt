@@ -1,0 +1,21 @@
+VERSION: tier_operator_action_v1
+
+Use the operator/discretization schema to write short executable arithmetic/python.
+Honor the discretization exactly. If the schema says ceiling, floor, remainder, next_multiple, or approximation, the code must reflect that.
+Return only:
+<schema>cleaned compact schema</schema>
+<code>assign the final numeric result to a variable named result whenever possible</code>
+<answer>best final numeric answer based on the code</answer>
+<scratch>one or two short lines describing the operator-to-code mapping</scratch>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Operator preview:
+{operator_preview}

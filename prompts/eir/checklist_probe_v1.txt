@@ -1,0 +1,18 @@
+VERSION: eir_checklist_probe_v1
+
+Question:
+{question}
+
+Current answer:
+{answer}
+
+Current scratch:
+{scratch}
+
+Extract a short constraint checklist relative to the current draft. Focus on quantities, units, rate/comparison constraints, and any missing or conflicting item.
+
+Return exactly these tags:
+<quantities>...</quantities>
+<constraints>...</constraints>
+<missing_or_conflicting>...</missing_or_conflicting>
+<complete>YES or NO</complete>

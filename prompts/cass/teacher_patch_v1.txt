@@ -1,0 +1,42 @@
+VERSION: cass_teacher_patch_v1
+
+Suggest only sparse field patches for the current frozen baseline schema.
+Return only:
+<target_variable>short snake_case target name or empty</target_variable>
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other or empty</final_target_type>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=... or empty</quantities>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other or empty</operator_family>
+<relation_chain>short dependency list using assignment-style statements, none, or empty</relation_chain>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest, or empty</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times, or empty</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference or empty</geometry_formula_family>
+<unresolved_items_count>integer or empty</unresolved_items_count>
+<complete>yes|no</complete>
+
+Rules:
+- This is conservative patching on a strong baseline.
+- Emit only fields that should change.
+- Leave a tag empty if the current baseline value should stay.
+- Do not rewrite the whole schema.
+- Keep patches short, precise, and compiler-ready.
+
+Cluster hint:
+{cluster_hint}
+
+Target/postprocess checker:
+{target_checker}
+
+Role checker:
+{role_checker}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current frozen baseline schema:
+{current_schema}

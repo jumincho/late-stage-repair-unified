@@ -1,0 +1,29 @@
+VERSION: validator_v1
+
+Return valid JSON only.
+
+Validate the candidate set without using any hidden gold answer.
+
+Filter or flag:
+- duplicates
+- malformed outputs
+- trivial or obviously silly options
+- ambiguous or non-actionable options
+
+JSON schema:
+{
+  "decisions": [
+    {
+      "option_id": "A",
+      "keep": true,
+      "reason": "short reason",
+      "duplicate_of": null
+    }
+  ]
+}
+
+Question:
+{question}
+
+Candidates:
+{candidates_json}

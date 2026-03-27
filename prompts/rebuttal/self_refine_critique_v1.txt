@@ -1,0 +1,23 @@
+VERSION: self_refine_critique_v1
+
+Return valid JSON only.
+
+Critique the draft answer concisely.
+
+JSON schema:
+{
+  "issues": [
+    "short issue 1",
+    "short issue 2"
+  ],
+  "fix_hint": "short revision hint"
+}
+
+Question:
+{question}
+
+Draft:
+{draft_json}
+
+Options:
+{options_block}

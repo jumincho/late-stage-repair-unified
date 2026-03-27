@@ -1,0 +1,26 @@
+VERSION: revise_same_tagged_v1
+
+Revise the current answer after reading the challenge.
+
+Rules:
+- If the challenge is decisive, correct the answer.
+- If the challenge is weak, keep the answer.
+- Keep the output concise and observable.
+- Do not include markdown.
+
+Required format:
+<answer>short final answer only</answer>
+<scratch>one short updated calculation sketch or decisive fact</scratch>
+<decision>keep|revise</decision>
+
+Question:
+{question}
+
+Current answer:
+{answer}
+
+Current short work:
+{scratch}
+
+Challenge:
+{attack}

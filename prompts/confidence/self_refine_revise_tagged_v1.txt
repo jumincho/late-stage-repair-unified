@@ -1,0 +1,26 @@
+VERSION: self_refine_revise_tagged_v1
+
+Revise the answer using the critique.
+
+Rules:
+- Keep the answer concise.
+- Do not include markdown.
+
+Required format:
+<answer>short final answer only</answer>
+<scratch>one short updated calculation sketch or decisive fact</scratch>
+
+Question:
+{question}
+
+Current answer:
+{answer}
+
+Current short work:
+{scratch}
+
+Critique:
+{critique}
+
+Fix hint:
+{fix_hint}

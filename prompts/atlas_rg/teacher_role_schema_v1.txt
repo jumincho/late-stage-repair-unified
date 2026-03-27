@@ -1,0 +1,51 @@
+VERSION: atlas_rg_teacher_role_schema_v1
+
+Extract a compact role-grounded operator schema for executable arithmetic.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other</final_target_type>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other</operator_family>
+<relation_chain>short dependency list using only assignment-style statements or none</relation_chain>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference</geometry_formula_family>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Required role vocabulary:
+- target
+- total
+- part
+- remaining
+- removed
+- added
+- base
+- delta
+- per_item
+- num_items
+- rate_numerator
+- rate_denominator
+- group_size
+- num_groups
+- comparison_base
+- comparison_difference
+- geometric_measure
+
+Rules:
+- This is a role-grounded schema, not a natural-language explanation.
+- Be explicit about which quantity is the target, which quantity is the base/delta, and which quantities are per-item or totals.
+- Use the smallest sufficient quantity table.
+- `complete=yes` only if the main roles and control fields are present.
+
+Cluster hint:
+{cluster_hint}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

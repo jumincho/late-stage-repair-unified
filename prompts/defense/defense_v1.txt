@@ -1,0 +1,23 @@
+VERSION: defense_v1
+
+Return valid JSON only.
+
+For each candidate, write the strongest short defense for why a careful but fallible model might choose it.
+
+Keep each defense to 1-3 short sentences.
+
+JSON schema:
+{
+  "defenses": [
+    {
+      "option_id": "A",
+      "defense": "short defense"
+    }
+  ]
+}
+
+Question:
+{question}
+
+Candidates:
+{candidates_json}

@@ -1,0 +1,19 @@
+VERSION: eir_python_action_v1
+
+Rewrite the core computation as short Python-style arithmetic.
+Return only:
+<code>assign the result to a variable named result whenever possible</code>
+<answer>best final numeric answer based on the code</answer>
+<scratch>one or two short lines explaining the computation</scratch>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Python preview:
+{python_preview}

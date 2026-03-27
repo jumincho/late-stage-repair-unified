@@ -1,0 +1,24 @@
+VERSION: rebuttal_v1
+
+Return valid JSON only.
+
+For each kept candidate, produce a concise rebuttal grid entry.
+
+JSON schema:
+{
+  "entries": [
+    {
+      "option_id": "A",
+      "seems_right_because": "short reason",
+      "likely_failure": "short failure mode",
+      "decisive_test_or_constraint": "short decisive check",
+      "verdict_for_now": "lean_accept|lean_reject|uncertain"
+    }
+  ]
+}
+
+Question:
+{question}
+
+Candidates with defenses:
+{candidates_json}

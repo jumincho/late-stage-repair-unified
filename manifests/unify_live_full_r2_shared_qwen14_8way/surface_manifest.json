@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "gsm8k_train",
+    "digest": "0a33c810a3ff0bb1",
+    "domain": "math",
+    "label": "cluster-hard full",
+    "manifest": "/workspace/project/results/unify_live_full_r2_shared_qwen14_8way/gsm8k_train_cluster_live_full.json",
+    "n": 1515,
+    "source_manifest": "/workspace/project/data/cass_r3_manifests_20260315a/gsm8k_train_cluster_main_r3_full1515.json",
+    "surface": "hard_cluster_main_r2"
+  },
+  {
+    "dataset": "gsm8k_train",
+    "digest": "72f151981d216411",
+    "domain": "math",
+    "label": "generic-hard full",
+    "manifest": "/workspace/project/results/unify_live_full_r2_shared_qwen14_8way/gsm8k_train_generic_live_full.json",
+    "n": 483,
+    "source_manifest": "/workspace/project/data/cass_r3_manifests_20260315a/gsm8k_train_generic_main_r3_full.json",
+    "surface": "hard_generic_main_r2"
+  },
+  {
+    "dataset": "ifeval_screened",
+    "digest": "28eda2af30e9c0c3",
+    "domain": "format",
+    "label": "screened IFEval full",
+    "manifest": "/workspace/project/results/unify_live_full_r2_shared_qwen14_8way/ifeval_screened_live_full.json",
+    "n": 381,
+    "source_manifest": "/workspace/project/data/lace_full_format_manifests_20260324a/ifeval_screened_le150_381.json",
+    "surface": "ifeval_screened"
+  },
+  {
+    "dataset": "ifbench",
+    "digest": "5214ed9492d1d61d",
+    "domain": "format",
+    "label": "IFBench full",
+    "manifest": "/workspace/project/results/unify_live_full_r2_shared_qwen14_8way/ifbench_live_full.json",
+    "n": 300,
+    "source_manifest": "/workspace/project/data/lace_full_format_manifests_20260324a/ifbench_main_300.json",
+    "surface": "ifbench"
+  }
+]

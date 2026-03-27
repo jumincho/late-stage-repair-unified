@@ -1,0 +1,47 @@
+methods:
+  direct_cot:
+    enabled: true
+  self_consistency_5:
+    enabled: true
+    samples: 5
+  self_refine_1:
+    enabled: true
+  self_refine_2_budgetmatched:
+    enabled: true
+  mc_select_only:
+    enabled: true
+    max_candidates: 4
+  dart_self:
+    enabled: true
+    max_candidates: 4
+  dart_adv:
+    enabled: true
+    max_candidates: 4
+    personas:
+      - arithmetic_slip
+      - ignored_constraint
+      - semantic_ambiguity
+      - misconception_mimic
+  dart_human_options:
+    enabled: true
+  freeform_devil_advocate_fresh:
+    enabled: true
+  freeform_devil_advocate_same:
+    enabled: true
+  dart_adv_same:
+    enabled: true
+  dart_adv_v2:
+    enabled: true
+    target_min_unique: 3
+    error_types:
+      - wrong_operation_or_equation
+      - omitted_constraint
+      - quantity_or_entity_swap
+      - unit_ratio_rate_confusion
+      - premature_rounding_or_arithmetic_slip
+      - semantic_scope_error
+  ablations:
+    same_model_vs_role_split: true
+    select_only_vs_regenerate: true
+    same_context_vs_fresh_context: true
+    self_vs_adversarial_candidates: true

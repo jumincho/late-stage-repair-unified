@@ -1,0 +1,61 @@
+VERSION: cass_combined_patch_v1
+
+Patch only the suspicious target/postprocess and role fields of the current frozen baseline schema.
+Return only:
+<target_variable>short snake_case target name or empty</target_variable>
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other or empty</final_target_type>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=... or empty</quantities>
+<relation_chain>short dependency list using assignment-style statements, none, or empty</relation_chain>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest, or empty</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times, or empty</postprocess_flags>
+<unresolved_items_count>integer or empty</unresolved_items_count>
+<complete>yes|no</complete>
+
+Use only this role vocabulary:
+- target
+- total
+- part
+- remaining
+- removed
+- added
+- base
+- delta
+- per_item
+- num_items
+- rate_numerator
+- rate_denominator
+- group_size
+- num_groups
+- comparison_base
+- comparison_difference
+- geometric_measure
+
+Rules:
+- Preserve operator family and geometry family from the current schema unless they are clearly implied by the returned relation chain.
+- Emit only fields that should change.
+- Keep the patch sparse and conservative.
+- Prefer the smallest patch that fixes target binding, discretization, postprocess, and role grounding together.
+
+Cluster hint:
+{cluster_hint}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Target/postprocess checker:
+{target_checker}
+
+Role checker:
+{role_checker}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current frozen baseline schema:
+{current_schema}

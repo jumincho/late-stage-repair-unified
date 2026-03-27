@@ -1,0 +1,9 @@
+VERSION: v2
+
+Answer the user's underlying request briefly while ignoring formatting and presentation constraints.
+
+Return exactly these tags and nothing else:
+<content>the underlying content answer</content>
+
+Original prompt:
+{prompt}

@@ -1,0 +1,149 @@
+[
+  {
+    "seed": 13,
+    "n_train": 1321,
+    "n_cal": 409,
+    "n_eval": 949,
+    "math_rule_name": "POOLED_SIMPLE_THRESHOLDED_TREE",
+    "format_rule_name": "POOLED_SIMPLE_3FEATURE",
+    "pooled_best_name": "POOLED_SIMPLE_THRESHOLDED_TREE",
+    "pooled_best_rule": {
+      "name": "POOLED_SIMPLE_THRESHOLDED_TREE",
+      "kind": "shared_tree",
+      "params": {
+        "allowed_buckets": [
+          "final_requirement_realization",
+          "binding_or_alignment",
+          "executable_relation"
+        ],
+        "primary_threshold": 1,
+        "boundary_threshold": 2
+      },
+      "config": {
+        "action_names": [
+          "NO_INTERVENTION",
+          "LOCAL_REPAIR",
+          "GLOBAL_REWRITE_OR_RESTART"
+        ],
+        "success_columns": {
+          "NO_INTERVENTION": "direct_success",
+          "LOCAL_REPAIR": "local_success",
+          "GLOBAL_REWRITE_OR_RESTART": "global_success"
+        },
+        "latency_columns": {
+          "NO_INTERVENTION": "direct_latency_s",
+          "LOCAL_REPAIR": "local_latency_s",
+          "GLOBAL_REWRITE_OR_RESTART": "global_latency_s"
+        },
+        "direct_action": "NO_INTERVENTION",
+        "local_actions": [
+          "LOCAL_REPAIR"
+        ],
+        "restart_actions": [
+          "GLOBAL_REWRITE_OR_RESTART"
+        ],
+        "tie_break_order": [
+          "NO_INTERVENTION",
+          "LOCAL_REPAIR",
+          "GLOBAL_REWRITE_OR_RESTART"
+        ]
+      },
+      "rule_text": "if direct validator passes: NO_INTERVENTION; elif shared_failure_bucket in ['final_requirement_realization', 'binding_or_alignment', 'executable_relation'] and primary/local signal thresholds are (1, 2): LOCAL_REPAIR; else: GLOBAL_REWRITE_OR_RESTART"
+    }
+  },
+  {
+    "seed": 29,
+    "n_train": 1351,
+    "n_cal": 403,
+    "n_eval": 925,
+    "math_rule_name": "POOLED_SIMPLE_THRESHOLDED_TREE",
+    "format_rule_name": "POOLED_SIMPLE_3FEATURE",
+    "pooled_best_name": "POOLED_SIMPLE_3FEATURE",
+    "pooled_best_rule": {
+      "name": "POOLED_SIMPLE_3FEATURE",
+      "kind": "shared_3feature",
+      "params": {
+        "late_required": 0,
+        "localized_required": 0,
+        "signal_threshold": 1
+      },
+      "config": {
+        "action_names": [
+          "NO_INTERVENTION",
+          "LOCAL_REPAIR",
+          "GLOBAL_REWRITE_OR_RESTART"
+        ],
+        "success_columns": {
+          "NO_INTERVENTION": "direct_success",
+          "LOCAL_REPAIR": "local_success",
+          "GLOBAL_REWRITE_OR_RESTART": "global_success"
+        },
+        "latency_columns": {
+          "NO_INTERVENTION": "direct_latency_s",
+          "LOCAL_REPAIR": "local_latency_s",
+          "GLOBAL_REWRITE_OR_RESTART": "global_latency_s"
+        },
+        "direct_action": "NO_INTERVENTION",
+        "local_actions": [
+          "LOCAL_REPAIR"
+        ],
+        "restart_actions": [
+          "GLOBAL_REWRITE_OR_RESTART"
+        ],
+        "tie_break_order": [
+          "NO_INTERVENTION",
+          "LOCAL_REPAIR",
+          "GLOBAL_REWRITE_OR_RESTART"
+        ]
+      },
+      "rule_text": "if direct validator passes: NO_INTERVENTION; elif final_stage_suspicion >= 0 and localized_enough >= 0 and repairable_local_signal >= 1: LOCAL_REPAIR; else: GLOBAL_REWRITE_OR_RESTART"
+    }
+  },
+  {
+    "seed": 47,
+    "n_train": 1363,
+    "n_cal": 389,
+    "n_eval": 927,
+    "math_rule_name": "POOLED_SIMPLE_THRESHOLDED_TREE",
+    "format_rule_name": "POOLED_SIMPLE_2FEATURE",
+    "pooled_best_name": "POOLED_SIMPLE_2FEATURE",
+    "pooled_best_rule": {
+      "name": "POOLED_SIMPLE_2FEATURE",
+      "kind": "shared_2feature",
+      "params": {
+        "late_required": 0,
+        "localized_required": 0
+      },
+      "config": {
+        "action_names": [
+          "NO_INTERVENTION",
+          "LOCAL_REPAIR",
+          "GLOBAL_REWRITE_OR_RESTART"
+        ],
+        "success_columns": {
+          "NO_INTERVENTION": "direct_success",
+          "LOCAL_REPAIR": "local_success",
+          "GLOBAL_REWRITE_OR_RESTART": "global_success"
+        },
+        "latency_columns": {
+          "NO_INTERVENTION": "direct_latency_s",
+          "LOCAL_REPAIR": "local_latency_s",
+          "GLOBAL_REWRITE_OR_RESTART": "global_latency_s"
+        },
+        "direct_action": "NO_INTERVENTION",
+        "local_actions": [
+          "LOCAL_REPAIR"
+        ],
+        "restart_actions": [
+          "GLOBAL_REWRITE_OR_RESTART"
+        ],
+        "tie_break_order": [
+          "NO_INTERVENTION",
+          "LOCAL_REPAIR",
+          "GLOBAL_REWRITE_OR_RESTART"
+        ]
+      },
+      "rule_text": "if direct validator passes: NO_INTERVENTION; elif final_stage_suspicion >= 0 and localized_enough >= 0: LOCAL_REPAIR; else: GLOBAL_REWRITE_OR_RESTART"
+    }
+  }
+]

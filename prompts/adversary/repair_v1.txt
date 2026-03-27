@@ -1,0 +1,56 @@
+VERSION: adversary_repair_v1
+
+Return valid JSON only.
+
+You are repairing a collapsed candidate set.
+
+Requirements:
+- Produce only novel candidates.
+- Every candidate must have a final answer different from the forbidden normalized answers.
+- Prefer new error types different from the used error types.
+- Do not repeat rejected candidates.
+- Keep outputs concise and actionable.
+- Return at most 2 candidates.
+
+JSON schema:
+{
+  "candidates": [
+    {
+      "option_id": "repair",
+      "answer": "candidate answer",
+      "normalized_answer": "normalized form guess",
+      "source": "adversary_v2_repair",
+      "persona": "repair_pass",
+      "failure_mode": "new error type",
+      "short_rationale": "decisive mistaken assumption",
+      "defense": "1-2 short sentences"
+    }
+  ]
+}
+
+Question:
+{question}
+
+Original draft:
+{draft_json}
+
+Target minimum kept unique candidates:
+{target_min_unique}
+
+Current kept candidates:
+{current_candidates_json}
+
+Forbidden normalized answers:
+{forbidden_answers}
+
+Used error types:
+{used_error_types}
+
+Rejected reasons:
+{rejected_reasons_block}
+
+Duplicate references:
+{duplicate_refs_block}
+
+Options:
+{options_block}

@@ -1,0 +1,34 @@
+VERSION: v1
+
+Use the provided equation-first plan to produce an executable answer path.
+Return tags only.
+
+Required tags:
+<direct_expr>single python expression for the final answer, or blank</direct_expr>
+<code>minimal python that stores the final numeric answer in result, or blank</code>
+<answer>short numeric answer guess</answer>
+<scratch>one short sentence</scratch>
+
+Rules:
+- Use the supplied plan faithfully.
+- If solve mode is `direct`, prefer a single direct expression.
+- If solve mode is `python`, write short code and assign the final value to `result`.
+- Do not add any text outside the tags.
+
+Question:
+{question}
+
+Variables:
+{variables}
+
+Equations:
+{equations}
+
+Target:
+{target}
+
+Solve mode:
+{solve_mode}
+
+Direct expression hint:
+{direct_expr_hint}

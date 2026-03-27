@@ -1,0 +1,51 @@
+VERSION: atlas_ms_teacher_full_bundle_v1
+
+Extract a compact full schema bundle for executable arithmetic.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other</final_target_type>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other</operator_family>
+<relation_chain>short dependency list using assignment-style statements or none</relation_chain>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference</geometry_formula_family>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Role vocabulary:
+- target
+- total
+- part
+- remaining
+- removed
+- added
+- base
+- delta
+- per_item
+- num_items
+- rate_numerator
+- rate_denominator
+- group_size
+- num_groups
+- comparison_base
+- comparison_difference
+- geometric_measure
+
+Rules:
+- This is a compact schema bundle, not an explanation.
+- Be explicit about operator family, discretization, target binding, postprocess handling, and quantity-role grounding.
+- Use the smallest sufficient quantity table.
+- `complete=yes` only if G1, G2, and G3 are all sufficiently specified.
+
+Cluster hint:
+{cluster_hint}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

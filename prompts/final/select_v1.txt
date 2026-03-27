@@ -1,0 +1,17 @@
+VERSION: final_select_v1
+
+Return valid JSON only.
+
+Select the currently best candidate. Do not regenerate a new answer.
+
+JSON schema:
+{
+  "option_id": "A",
+  "reason": "short reason"
+}
+
+Question:
+{question}
+
+Candidates:
+{candidates_json}

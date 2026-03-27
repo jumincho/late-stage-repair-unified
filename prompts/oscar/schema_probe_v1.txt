@@ -1,0 +1,29 @@
+VERSION: oscar_schema_probe_v1
+
+Extract a compact operator-schema for executable arithmetic compilation.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other</final_target_type>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other</operator_family>
+<relation_chain>assignment statements using only allowed ops add, sub, mul, div, ceil_div, floor_div, remainder, next_multiple, complement, difference, percent_of, percent_left, avg, area_rect, area_square, area_triangle, perimeter_rect, area_circle, circumference_circle, identity</relation_chain>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference</geometry_formula_family>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Rules:
+- Keep the schema short and compiler-ready.
+- Use numeric values only in quantities.
+- Prefer relation chains like `raw_groups=div(total_items,group_size); result=ceil(raw_groups)` or `spent=add(a,b); result=sub(total,spent)`.
+- If the problem needs ceiling, floor, remainder, complement, or next-multiple semantics, encode that explicitly.
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

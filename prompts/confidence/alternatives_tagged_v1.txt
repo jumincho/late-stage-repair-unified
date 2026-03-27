@@ -1,0 +1,23 @@
+VERSION: alternatives_tagged_v1
+
+Produce two concise alternative answers that are incompatible with the current answer.
+
+Rules:
+- Alternatives should be plausible arithmetic mistakes, not nonsense.
+- Each alternative must differ from the current answer.
+- Keep them short.
+- Do not include markdown.
+
+Required format:
+<alt1>first alternative final answer only</alt1>
+<alt2>second alternative final answer only</alt2>
+<why>one short note about the main source of uncertainty</why>
+
+Question:
+{question}
+
+Current answer:
+{answer}
+
+Current short work:
+{scratch}

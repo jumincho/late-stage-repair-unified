@@ -1,0 +1,19 @@
+VERSION: oscar_constrained_compile_v1
+
+You are given a typed arithmetic schema. Produce a restricted execution program using only the allowed DSL.
+Return only:
+<program>assignment statements separated by semicolons. Use only allowed ops add, sub, mul, div, ceil_div, floor_div, remainder, next_multiple, complement, difference, percent_of, percent_left, avg, area_rect, area_square, area_triangle, perimeter_rect, area_circle, circumference_circle, identity. Final assignment must write to result.</program>
+<answer>best final numeric answer if obvious, otherwise NA</answer>
+<scratch>one short line explaining the schema-to-program mapping</scratch>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Schema:
+{schema_preview}

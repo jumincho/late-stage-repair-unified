@@ -1,0 +1,1116 @@
+{
+  "dataset": "gsm8k_train",
+  "entries": [
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6553",
+      "sequence_index": 1330,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6554",
+      "sequence_index": 1331,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6557",
+      "sequence_index": 1332,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6563",
+      "sequence_index": 1333,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6568",
+      "sequence_index": 1334,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6571",
+      "sequence_index": 1335,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6582",
+      "sequence_index": 1336,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6586",
+      "sequence_index": 1337,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6595",
+      "sequence_index": 1338,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6597",
+      "sequence_index": 1339,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6599",
+      "sequence_index": 1340,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6604",
+      "sequence_index": 1341,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6606",
+      "sequence_index": 1342,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6608",
+      "sequence_index": 1343,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6612",
+      "sequence_index": 1344,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6622",
+      "sequence_index": 1345,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6624",
+      "sequence_index": 1346,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6626",
+      "sequence_index": 1347,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6629",
+      "sequence_index": 1348,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6638",
+      "sequence_index": 1349,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6643",
+      "sequence_index": 1350,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6644",
+      "sequence_index": 1351,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6645",
+      "sequence_index": 1352,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6648",
+      "sequence_index": 1353,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6658",
+      "sequence_index": 1354,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6659",
+      "sequence_index": 1355,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6661",
+      "sequence_index": 1356,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6676",
+      "sequence_index": 1357,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6677",
+      "sequence_index": 1358,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6685",
+      "sequence_index": 1359,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6692",
+      "sequence_index": 1360,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6694",
+      "sequence_index": 1361,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6708",
+      "sequence_index": 1362,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6712",
+      "sequence_index": 1363,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6714",
+      "sequence_index": 1364,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6715",
+      "sequence_index": 1365,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6717",
+      "sequence_index": 1366,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6720",
+      "sequence_index": 1367,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6727",
+      "sequence_index": 1368,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6735",
+      "sequence_index": 1369,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6742",
+      "sequence_index": 1370,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6746",
+      "sequence_index": 1371,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6748",
+      "sequence_index": 1372,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6749",
+      "sequence_index": 1373,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6756",
+      "sequence_index": 1374,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6757",
+      "sequence_index": 1375,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6760",
+      "sequence_index": 1376,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6766",
+      "sequence_index": 1377,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6769",
+      "sequence_index": 1378,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6773",
+      "sequence_index": 1379,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6790",
+      "sequence_index": 1380,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6797",
+      "sequence_index": 1381,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6808",
+      "sequence_index": 1382,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6814",
+      "sequence_index": 1383,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6815",
+      "sequence_index": 1384,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6816",
+      "sequence_index": 1385,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6821",
+      "sequence_index": 1386,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6825",
+      "sequence_index": 1387,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6831",
+      "sequence_index": 1388,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6834",
+      "sequence_index": 1389,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6854",
+      "sequence_index": 1390,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6855",
+      "sequence_index": 1391,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6866",
+      "sequence_index": 1392,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6868",
+      "sequence_index": 1393,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6873",
+      "sequence_index": 1394,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6886",
+      "sequence_index": 1395,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6890",
+      "sequence_index": 1396,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6900",
+      "sequence_index": 1397,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6906",
+      "sequence_index": 1398,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6907",
+      "sequence_index": 1399,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6913",
+      "sequence_index": 1400,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6917",
+      "sequence_index": 1401,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6926",
+      "sequence_index": 1402,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6927",
+      "sequence_index": 1403,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6931",
+      "sequence_index": 1404,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6942",
+      "sequence_index": 1405,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6943",
+      "sequence_index": 1406,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6947",
+      "sequence_index": 1407,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6955",
+      "sequence_index": 1408,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6958",
+      "sequence_index": 1409,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6967",
+      "sequence_index": 1410,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6970",
+      "sequence_index": 1411,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6971",
+      "sequence_index": 1412,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6977",
+      "sequence_index": 1413,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6984",
+      "sequence_index": 1414,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6994",
+      "sequence_index": 1415,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6997",
+      "sequence_index": 1416,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_6999",
+      "sequence_index": 1417,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7004",
+      "sequence_index": 1418,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7011",
+      "sequence_index": 1419,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7012",
+      "sequence_index": 1420,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7013",
+      "sequence_index": 1421,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7015",
+      "sequence_index": 1422,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7029",
+      "sequence_index": 1423,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7041",
+      "sequence_index": 1424,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7045",
+      "sequence_index": 1425,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7052",
+      "sequence_index": 1426,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7053",
+      "sequence_index": 1427,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7056",
+      "sequence_index": 1428,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7057",
+      "sequence_index": 1429,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7062",
+      "sequence_index": 1430,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7069",
+      "sequence_index": 1431,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7070",
+      "sequence_index": 1432,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7072",
+      "sequence_index": 1433,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7086",
+      "sequence_index": 1434,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7090",
+      "sequence_index": 1435,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7092",
+      "sequence_index": 1436,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7101",
+      "sequence_index": 1437,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7105",
+      "sequence_index": 1438,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7111",
+      "sequence_index": 1439,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7134",
+      "sequence_index": 1440,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7138",
+      "sequence_index": 1441,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7150",
+      "sequence_index": 1442,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7152",
+      "sequence_index": 1443,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7155",
+      "sequence_index": 1444,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7156",
+      "sequence_index": 1445,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7159",
+      "sequence_index": 1446,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7160",
+      "sequence_index": 1447,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7161",
+      "sequence_index": 1448,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7162",
+      "sequence_index": 1449,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7163",
+      "sequence_index": 1450,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7170",
+      "sequence_index": 1451,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7175",
+      "sequence_index": 1452,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7177",
+      "sequence_index": 1453,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7182",
+      "sequence_index": 1454,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7194",
+      "sequence_index": 1455,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7197",
+      "sequence_index": 1456,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7200",
+      "sequence_index": 1457,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7209",
+      "sequence_index": 1458,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7212",
+      "sequence_index": 1459,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7213",
+      "sequence_index": 1460,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7215",
+      "sequence_index": 1461,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7225",
+      "sequence_index": 1462,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7228",
+      "sequence_index": 1463,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7232",
+      "sequence_index": 1464,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7233",
+      "sequence_index": 1465,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7235",
+      "sequence_index": 1466,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7243",
+      "sequence_index": 1467,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7245",
+      "sequence_index": 1468,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7246",
+      "sequence_index": 1469,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7247",
+      "sequence_index": 1470,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7251",
+      "sequence_index": 1471,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7253",
+      "sequence_index": 1472,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7254",
+      "sequence_index": 1473,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7255",
+      "sequence_index": 1474,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7268",
+      "sequence_index": 1475,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7280",
+      "sequence_index": 1476,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7285",
+      "sequence_index": 1477,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7286",
+      "sequence_index": 1478,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7287",
+      "sequence_index": 1479,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7292",
+      "sequence_index": 1480,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7293",
+      "sequence_index": 1481,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7305",
+      "sequence_index": 1482,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7308",
+      "sequence_index": 1483,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7320",
+      "sequence_index": 1484,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7333",
+      "sequence_index": 1485,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7334",
+      "sequence_index": 1486,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7337",
+      "sequence_index": 1487,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7340",
+      "sequence_index": 1488,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7345",
+      "sequence_index": 1489,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7348",
+      "sequence_index": 1490,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7360",
+      "sequence_index": 1491,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7366",
+      "sequence_index": 1492,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7371",
+      "sequence_index": 1493,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7372",
+      "sequence_index": 1494,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7373",
+      "sequence_index": 1495,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7378",
+      "sequence_index": 1496,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7384",
+      "sequence_index": 1497,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7390",
+      "sequence_index": 1498,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7392",
+      "sequence_index": 1499,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7395",
+      "sequence_index": 1500,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7397",
+      "sequence_index": 1501,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7399",
+      "sequence_index": 1502,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7403",
+      "sequence_index": 1503,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7408",
+      "sequence_index": 1504,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7409",
+      "sequence_index": 1505,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7415",
+      "sequence_index": 1506,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7444",
+      "sequence_index": 1507,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7447",
+      "sequence_index": 1508,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7449",
+      "sequence_index": 1509,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7452",
+      "sequence_index": 1510,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7453",
+      "sequence_index": 1511,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7461",
+      "sequence_index": 1512,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7470",
+      "sequence_index": 1513,
+      "surface": "hard_cluster_main_r2"
+    },
+    {
+      "cluster": "average_repeated_times",
+      "question_id": "gsm8k_train_7472",
+      "sequence_index": 1514,
+      "surface": "hard_cluster_main_r2"
+    }
+  ],
+  "surface": "hard_cluster_main_r2"
+}

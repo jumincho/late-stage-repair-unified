@@ -1,0 +1,49 @@
+VERSION: atlas_rg_role_repair_v1
+
+Repair only the quantity-role grounding of the current schema.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<relation_chain>short dependency list or none</relation_chain>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Use only this role vocabulary:
+- target
+- total
+- part
+- remaining
+- removed
+- added
+- base
+- delta
+- per_item
+- num_items
+- rate_numerator
+- rate_denominator
+- group_size
+- num_groups
+- comparison_base
+- comparison_difference
+- geometric_measure
+
+Rules:
+- Preserve operator family, target type, discretization, and postprocess assumptions from the current schema.
+- Repair only target binding and quantity-role assignments.
+- Replace any unsupported or vague role labels with the closest allowed compiler-relevant role.
+- Prefer minimal role fixes over rewriting everything.
+
+Cluster hint:
+{cluster_hint}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current schema:
+{current_schema}

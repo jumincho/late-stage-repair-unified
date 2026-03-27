@@ -1,0 +1,27 @@
+VERSION: final_same_context_v1
+
+Return valid JSON only.
+
+Produce the final answer using the full candidate artifact in the same context.
+
+Requirements:
+- Use the question, candidate set, defenses, and rebuttal grid directly.
+- Keep the answer concise.
+- You may answer outside the candidate set if the task is open-ended.
+
+JSON schema:
+{
+  "answer": "short final answer string",
+  "normalized_answer": "normalized answer string",
+  "justification": "2-4 short sentences",
+  "confidence": "low|medium|high"
+}
+
+Question:
+{question}
+
+Candidate artifact:
+{candidate_artifact_json}
+
+Options:
+{options_block}

@@ -1,0 +1,17 @@
+VERSION: tier_equation_probe_v1
+
+Extract a compact variable/equation sketch that could be compiled into code.
+Return only:
+<variables>semicolon-separated variable definitions or names</variables>
+<equations>semicolon-separated equation skeletons</equations>
+<unresolved_count>integer count of unresolved symbols</unresolved_count>
+<complete>yes|no</complete>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

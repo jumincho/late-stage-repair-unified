@@ -1,0 +1,16 @@
+VERSION: v2
+
+Minimally edit the answer below so it satisfies the original prompt's explicit constraints while preserving the intended content as much as possible.
+Satisfy every listed constraint exactly.
+If a keyword count, word count, or forbidden-token rule is listed, verify it explicitly before you finish.
+
+Return only the patched final answer with no commentary.
+
+Original prompt:
+{prompt}
+
+Current answer:
+{response}
+
+Validator feedback:
+{validator_feedback}

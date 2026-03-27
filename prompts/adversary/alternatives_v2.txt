@@ -1,0 +1,39 @@
+VERSION: adversary_alternatives_v2
+
+Return valid JSON only.
+
+You are generating plausible alternative hypotheses that could trap a careful but fallible model.
+
+Requirements:
+- Generate at most {max_candidates} alternatives.
+- Each alternative must target a distinct failure mode.
+- Avoid duplicates by normalized answer.
+- Plausible does not mean correct.
+- Do not repeat the original draft verbatim.
+
+JSON schema:
+{
+  "candidates": [
+    {
+      "option_id": "B",
+      "answer": "candidate answer",
+      "normalized_answer": "normalized form",
+      "source": "adversary",
+      "persona": "persona name",
+      "failure_mode": "short failure mode tag",
+      "short_rationale": "trap mechanism in one sentence"
+    }
+  ]
+}
+
+Question:
+{question}
+
+Original draft:
+{draft_json}
+
+Personas:
+{personas_block}
+
+Options:
+{options_block}

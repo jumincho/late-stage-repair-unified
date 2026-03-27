@@ -1,0 +1,18 @@
+VERSION: eir_python_probe_v1
+
+Preview whether the core computation can be rewritten as short executable arithmetic.
+Return only:
+<code>very short python expression or result assignment</code>
+<parse_success>yes|no</parse_success>
+<exec_ready>yes|no</exec_ready>
+<result_guess>numeric guess or NA</result_guess>
+<mismatch>yes|no|unknown</mismatch>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

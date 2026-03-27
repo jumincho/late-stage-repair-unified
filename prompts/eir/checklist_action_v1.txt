@@ -1,0 +1,20 @@
+VERSION: eir_checklist_action_v1
+
+Question:
+{question}
+
+Current answer:
+{answer}
+
+Current scratch:
+{scratch}
+
+Constraint checklist preview:
+{checklist_preview}
+
+Re-solve briefly by explicitly checking the listed quantities / units / comparison constraints against the draft. If the draft is already consistent, keep it. If not, revise it.
+
+Return exactly these tags:
+<answer>...</answer>
+<checklist>...</checklist>
+<scratch>...</scratch>

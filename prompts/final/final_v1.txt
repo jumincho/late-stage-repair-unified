@@ -1,0 +1,30 @@
+VERSION: final_v1
+
+Return valid JSON only.
+
+Produce the final answer in a fresh context using only:
+- the question
+- distilled constraints
+- concise summary of why leading alternatives fail
+
+You may answer outside the candidate set if needed.
+
+JSON schema:
+{
+  "answer": "short final answer string",
+  "normalized_answer": "normalized answer string",
+  "justification": "2-4 short sentences",
+  "confidence": "low|medium|high"
+}
+
+Question:
+{question}
+
+Distilled constraints:
+{constraints_block}
+
+Rebuttal summary:
+{rebuttal_summary}
+
+Options:
+{options_block}

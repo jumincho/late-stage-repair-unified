@@ -1,0 +1,31 @@
+VERSION: final_option_fresh_v1
+
+Return valid JSON only.
+
+Select the final option in a fresh context using only:
+- the question
+- distilled constraints
+- concise summary of why leading alternatives fail
+- the original option list
+
+Requirements:
+- Output only one of the original option letters.
+- Do not answer outside the provided options.
+
+JSON schema:
+{
+  "option_id": "A",
+  "reason": "1-2 short sentences"
+}
+
+Question:
+{question}
+
+Distilled constraints:
+{constraints_block}
+
+Rebuttal summary:
+{rebuttal_summary}
+
+Options:
+{options_block}

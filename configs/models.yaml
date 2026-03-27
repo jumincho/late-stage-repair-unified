@@ -1,0 +1,26 @@
+seed: 13
+concurrency: 4
+cache_dir: results/cache
+pricing:
+  gpt-5-mini:
+    input_cost_per_1m: 0.25
+    output_cost_per_1m: 2.0
+  gpt-5-nano:
+    input_cost_per_1m: 0.05
+    output_cost_per_1m: 0.4
+models:
+  primary:
+    provider: openai
+    name: ${DART_OPENAI_PRIMARY_MODEL:-gpt-5-mini}
+    temperature: 0.2
+    max_output_tokens: 900
+  cheap:
+    provider: openai
+    name: ${DART_OPENAI_CHEAP_MODEL:-gpt-5-nano}
+    temperature: 0.7
+    max_output_tokens: 500
+  validator:
+    provider: openai
+    name: ${DART_OPENAI_PRIMARY_MODEL:-gpt-5-mini}
+    temperature: 0.1
+    max_output_tokens: 700

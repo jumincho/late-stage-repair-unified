@@ -1,0 +1,49 @@
+model_name,phase_name,module,surface_name,shard_name,manifest_rows,actual_rows,has_manifest,has_rows,completed_flag,row_match,duplicate_ids
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard01of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard02of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard03of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard04of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard05of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard06of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard07of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_raw,math,cluster-hard,gsm8k_train_cluster_live_full__shard08of08,185,185,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard01of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard02of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard03of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard04of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard05of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard06of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard07of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_raw,math,generic-hard,gsm8k_train_generic_live_full__shard08of08,56,56,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard01of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard02of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard03of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard04of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard05of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard06of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard07of08,190,190,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_cluster_replay,math,cluster-hard,gsm8k_train_cluster_live_full__shard08of08,185,185,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard01of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard02of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard03of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard04of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard05of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard06of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard07of08,61,61,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,math_generic_replay,math,generic-hard,gsm8k_train_generic_live_full__shard08of08,56,56,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard01of08,48,48,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard02of08,48,48,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard03of08,48,48,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard04of08,48,48,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard05of08,48,48,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard06of08,48,48,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard07of08,48,48,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifeval,format,screened IFEval,ifeval_shard08of08,45,45,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard01of08,38,38,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard02of08,38,38,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard03of08,38,38,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard04of08,38,38,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard05of08,38,38,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard06of08,38,38,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard07of08,38,38,1,1,1,1,0
+Qwen/Qwen2.5-14B-Instruct,format_ifbench,format,IFBench,ifbench_shard08of08,34,34,1,1,1,1,0

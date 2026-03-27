@@ -1,0 +1,27 @@
+VERSION: v2
+
+The prefix of a planning attempt is already valid.
+Repair only the remaining suffix.
+
+Return exactly these tags and nothing else:
+<suffix>comma-separated moves using only the allowed move tokens from the task</suffix>
+<summary>one short sentence</summary>
+
+Original task:
+{task_block}
+
+Validated prefix information:
+- valid_prefix: {valid_prefix}
+- valid_prefix_length: {valid_prefix_length}
+- current_state_after_prefix: {current_state}
+- failure_type: {failure_type}
+- first_invalid_step: {first_invalid_step}
+- previous_plan: {previous_plan}
+
+Write only the remaining suffix from the current state to the goal.
+Do not repeat the valid prefix.
+Track the state after each move.
+In `<suffix>`, write only the move tokens themselves, never map symbols such as `S`, `G`, `K`, or `D`.
+
+Reminder example:
+- if the current task is a line with moves `L,R`, one valid suffix might look like `R,R,L,R`.

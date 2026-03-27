@@ -1,0 +1,18 @@
+VERSION: tier_quantity_probe_v1
+
+Extract a compact typed quantity table for executable recomputation.
+Return only:
+<quantities>semicolon-separated entries: name=value [unit] [role]</quantities>
+<target_unknown>what must be solved</target_unknown>
+<relations>semicolon-separated relations or constraints</relations>
+<unresolved_count>integer count of unresolved entities</unresolved_count>
+<complete>yes|no</complete>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

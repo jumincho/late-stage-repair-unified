@@ -1,0 +1,13 @@
+model_name,seed,direction,scope,policy,utility,intervention_rate
+mistralai/Mistral-7B-Instruct-v0.3,13,math_to_format,format:overall,MATH_TUNED_SIMPLE_RULE,0.43209876543209874,0.757201646090535
+mistralai/Mistral-7B-Instruct-v0.3,13,format_to_math,math:overall,FORMAT_TUNED_SIMPLE_RULE,0.3810198300283286,0.9376770538243626
+mistralai/Mistral-7B-Instruct-v0.3,13,pooled_to_math,math:overall,POOLED_RULE_BEST,0.3781869688385269,0.9376770538243626
+mistralai/Mistral-7B-Instruct-v0.3,13,pooled_to_format,format:overall,POOLED_RULE_BEST,0.43209876543209874,0.757201646090535
+mistralai/Mistral-7B-Instruct-v0.3,29,math_to_format,format:overall,MATH_TUNED_SIMPLE_RULE,0.4251012145748988,0.7530364372469636
+mistralai/Mistral-7B-Instruct-v0.3,29,format_to_math,math:overall,FORMAT_TUNED_SIMPLE_RULE,0.3938053097345133,0.9351032448377581
+mistralai/Mistral-7B-Instruct-v0.3,29,pooled_to_math,math:overall,POOLED_RULE_BEST,0.3938053097345133,0.9351032448377581
+mistralai/Mistral-7B-Instruct-v0.3,29,pooled_to_format,format:overall,POOLED_RULE_BEST,0.4534412955465587,0.7530364372469636
+mistralai/Mistral-7B-Instruct-v0.3,47,math_to_format,format:overall,MATH_TUNED_SIMPLE_RULE,0.40611353711790393,0.7292576419213974
+mistralai/Mistral-7B-Instruct-v0.3,47,format_to_math,math:overall,FORMAT_TUNED_SIMPLE_RULE,0.4140401146131805,0.9355300859598854
+mistralai/Mistral-7B-Instruct-v0.3,47,pooled_to_math,math:overall,POOLED_RULE_BEST,0.4140401146131805,0.9355300859598854
+mistralai/Mistral-7B-Instruct-v0.3,47,pooled_to_format,format:overall,POOLED_RULE_BEST,0.45414847161572053,0.7292576419213974

@@ -1,0 +1,22 @@
+VERSION: v1
+
+Derive a compact equation-first plan for this arithmetic problem.
+Return tags only.
+
+Required tags:
+<variables>semicolon-separated variable glossary</variables>
+<equations>semicolon-separated python-style governing equations</equations>
+<target>python-style expression or final symbolic target</target>
+<solve_mode>direct|python</solve_mode>
+<direct_expr_hint>single python expression if a direct solve is plausible, otherwise blank</direct_expr_hint>
+<notes>one short sentence</notes>
+
+Rules:
+- Use python arithmetic syntax.
+- Keep equations compact and executable.
+- Choose `direct` only if one final expression is enough.
+- Choose `python` when intermediate variables, rounding, or case handling are needed.
+- Do not add any text outside the tags.
+
+Question:
+{question}

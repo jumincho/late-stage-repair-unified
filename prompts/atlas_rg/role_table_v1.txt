@@ -1,0 +1,47 @@
+VERSION: atlas_rg_role_table_v1
+
+Extract only the quantity-role grounding for executable arithmetic.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<relation_chain>short dependency list or none</relation_chain>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Use only this role vocabulary:
+- target
+- total
+- part
+- remaining
+- removed
+- added
+- base
+- delta
+- per_item
+- num_items
+- rate_numerator
+- rate_denominator
+- group_size
+- num_groups
+- comparison_base
+- comparison_difference
+- geometric_measure
+
+Rules:
+- Be explicit about which quantity the question asks for.
+- Prefer compact role-grounded tables over long enumerations.
+- Include quantity roles/entities when they disambiguate percent, average, geometry, comparison, rate, packaging, or leftover semantics.
+- Every `role=` value must come from the allowed role vocabulary above; do not invent labels like `count` or `amount`.
+- Keep the relation chain short and compiler-ready.
+
+Cluster hint:
+{cluster_hint}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

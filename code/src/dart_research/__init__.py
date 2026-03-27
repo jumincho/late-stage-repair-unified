@@ -1,0 +1,2 @@
+"""DART research prototype package."""
+

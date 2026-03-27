@@ -1,0 +1,32 @@
+VERSION: atlas_ms_operator_role_bundle_v1
+
+Repair only G1 + G3.
+Return only:
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other</operator_family>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest</discretization_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference</geometry_formula_family>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Rules:
+- Preserve target binding and postprocess handling from the current schema.
+- Repair only G1 + G3.
+
+Cluster hint:
+{cluster_hint}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current schema:
+{current_schema}

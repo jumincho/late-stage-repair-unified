@@ -1,0 +1,26 @@
+VERSION: atlas_field_semantics_v1
+
+Extract only the critical semantic fields for executable arithmetic.
+Return only:
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other</final_target_type>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other</operator_family>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference</geometry_formula_family>
+<complete>yes|no</complete>
+
+Rules:
+- Focus on operator family, target semantics, and discretization/postprocess requirements.
+- If the problem needs packaging, leftover, complement, "how many more", or repeated-times semantics, mark that explicitly.
+
+Cluster hint:
+{cluster_hint}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

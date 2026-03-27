@@ -1,0 +1,24 @@
+VERSION: final_option_same_context_v1
+
+Return valid JSON only.
+
+Select the final option using the full candidate artifact in the same context.
+
+Requirements:
+- Output only one of the original option letters.
+- Do not answer outside the provided options.
+
+JSON schema:
+{
+  "option_id": "A",
+  "reason": "1-2 short sentences"
+}
+
+Question:
+{question}
+
+Candidate artifact:
+{candidate_artifact_json}
+
+Options:
+{options_block}

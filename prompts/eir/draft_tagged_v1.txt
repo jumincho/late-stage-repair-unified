@@ -1,0 +1,9 @@
+VERSION: eir_draft_tagged_v1
+
+Solve the math word problem briefly.
+Return only:
+<answer>final answer only</answer>
+<scratch>short working, at most 4 lines</scratch>
+
+Problem:
+{question}

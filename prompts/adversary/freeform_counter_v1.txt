@@ -1,0 +1,26 @@
+VERSION: freeform_counter_v1
+
+Return valid JSON only.
+
+You are writing the strongest concise devil's-advocate critique of the draft without using an explicit option set.
+
+Requirements:
+- Surface one plausible alternative reasoning path.
+- Focus on a realistic failure risk, not random nonsense.
+- Keep everything concise and observable.
+
+JSON schema:
+{
+  "counterargument": "2-3 short sentences describing why the draft may be wrong",
+  "alternative_path": "one short alternative path or calculation sketch",
+  "main_risk": "short risk tag"
+}
+
+Question:
+{question}
+
+Draft:
+{draft_json}
+
+Options:
+{options_block}

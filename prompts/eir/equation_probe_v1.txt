@@ -1,0 +1,18 @@
+VERSION: eir_equation_probe_v1
+
+Preview whether equation-based re-derivation is feasible.
+Return only:
+<variables>comma-separated variable or quantity names</variables>
+<equations>key equation skeletons only</equations>
+<parse_success>yes|no</parse_success>
+<unresolved_count>integer</unresolved_count>
+<complete_path>yes|no</complete_path>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

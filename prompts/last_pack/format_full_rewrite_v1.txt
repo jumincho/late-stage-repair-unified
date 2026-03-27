@@ -1,0 +1,17 @@
+VERSION: v2
+
+The previous answer failed the validator.
+Rewrite the full answer so it satisfies the original instructions.
+Satisfy every explicit constraint exactly.
+If the prompt specifies counts, lengths, or forbidden tokens, check them before you finish.
+
+Return only the final rewritten answer with no commentary.
+
+Original prompt:
+{prompt}
+
+Previous answer:
+{response}
+
+Validator feedback:
+{validator_feedback}

@@ -1,0 +1,45 @@
+{
+  "abstract_action_space": [
+    "NO_INTERVENTION",
+    "LOCAL_REPAIR",
+    "GLOBAL_REWRITE_OR_RESTART"
+  ],
+  "action_mapping": {
+    "format": {
+      "GLOBAL_REWRITE_OR_RESTART": "full_rewrite_on_failure",
+      "LOCAL_REPAIR": "solve_then_format",
+      "NO_INTERVENTION": "direct formatted answer"
+    },
+    "math": {
+      "GLOBAL_REWRITE_OR_RESTART": "self_refine_1",
+      "LOCAL_REPAIR": "GRANITE_POSTPROCESS_ONLY_PATCH replay over fresh math traces",
+      "NO_INTERVENTION": "direct answer"
+    }
+  },
+  "phase_expected_counts": {
+    "format_ifbench": 300,
+    "format_ifeval": 381,
+    "math_cluster_raw": 1515,
+    "math_cluster_replay": 1515,
+    "math_generic_raw": 483,
+    "math_generic_replay": 483
+  },
+  "shared_feature_columns": [
+    "localized_failure_count",
+    "repairable_local_signal",
+    "final_stage_suspicion",
+    "localized_enough",
+    "surface_bucket",
+    "shared_failure_bucket"
+  ],
+  "split_scheme": {
+    "cal_ratio": 0.15,
+    "eval_ratio": 0.35,
+    "train_ratio": 0.5
+  },
+  "split_seeds": [
+    13,
+    29,
+    47
+  ]
+}

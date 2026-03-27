@@ -1,0 +1,13 @@
+model_name,seed,direction,scope,policy,utility,intervention_rate
+Qwen/Qwen2.5-7B-Instruct,13,math_to_format,format:overall,MATH_TUNED_SIMPLE_RULE,0.6088709677419355,0.5201612903225806
+Qwen/Qwen2.5-7B-Instruct,13,format_to_math,math:overall,FORMAT_TUNED_SIMPLE_RULE,0.7715877437325905,0.6949860724233984
+Qwen/Qwen2.5-7B-Instruct,13,pooled_to_math,math:overall,POOLED_RULE_BEST,0.7729805013927576,0.6949860724233984
+Qwen/Qwen2.5-7B-Instruct,13,pooled_to_format,format:overall,POOLED_RULE_BEST,0.6088709677419355,0.5201612903225806
+Qwen/Qwen2.5-7B-Instruct,29,math_to_format,format:overall,MATH_TUNED_SIMPLE_RULE,0.6170212765957447,0.5361702127659574
+Qwen/Qwen2.5-7B-Instruct,29,format_to_math,math:overall,FORMAT_TUNED_SIMPLE_RULE,0.7857142857142857,0.7172619047619048
+Qwen/Qwen2.5-7B-Instruct,29,pooled_to_math,math:overall,POOLED_RULE_BEST,0.7857142857142857,0.7172619047619048
+Qwen/Qwen2.5-7B-Instruct,29,pooled_to_format,format:overall,POOLED_RULE_BEST,0.6297872340425532,0.5361702127659574
+Qwen/Qwen2.5-7B-Instruct,47,math_to_format,format:overall,MATH_TUNED_SIMPLE_RULE,0.618421052631579,0.5043859649122807
+Qwen/Qwen2.5-7B-Instruct,47,format_to_math,math:overall,FORMAT_TUNED_SIMPLE_RULE,0.7458791208791209,0.7335164835164835
+Qwen/Qwen2.5-7B-Instruct,47,pooled_to_math,math:overall,POOLED_RULE_BEST,0.7458791208791209,0.7335164835164835
+Qwen/Qwen2.5-7B-Instruct,47,pooled_to_format,format:overall,POOLED_RULE_BEST,0.6754385964912281,0.5043859649122807

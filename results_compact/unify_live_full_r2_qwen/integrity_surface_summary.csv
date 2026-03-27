@@ -1,0 +1,7 @@
+model_name,phase_name,module,surface_name,expected_rows,actual_rows,unique_ids,duplicate_ids,duplicate_example_action_rows,shard_count,complete_shards,parse_success_rate,validator_ready_rate,required_action_coverage,paper_safe_surface
+Qwen/Qwen2.5-7B-Instruct,math_cluster_raw,math,cluster-hard,1515,1515,1515,0,0,4,4,1.0,1.0,1.0,1
+Qwen/Qwen2.5-7B-Instruct,math_generic_raw,math,generic-hard,483,483,483,0,0,4,4,1.0,1.0,1.0,1
+Qwen/Qwen2.5-7B-Instruct,math_cluster_replay,math,cluster-hard,1515,1515,1515,0,0,4,4,1.0,1.0,1.0,1
+Qwen/Qwen2.5-7B-Instruct,math_generic_replay,math,generic-hard,483,483,483,0,0,4,4,1.0,1.0,1.0,1
+Qwen/Qwen2.5-7B-Instruct,format_ifeval,format,screened IFEval,381,381,381,0,0,4,4,1.0,1.0,1.0,1
+Qwen/Qwen2.5-7B-Instruct,format_ifbench,format,IFBench,300,300,300,0,0,4,4,1.0,1.0,1.0,1

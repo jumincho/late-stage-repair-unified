@@ -1,0 +1,39 @@
+VERSION: atlas_rg_critical_role_repair_v1
+
+Repair only the highest-value role fields of the current schema.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<relation_chain>short dependency list or none</relation_chain>
+<complete>yes|no</complete>
+
+Only repair these roles when needed:
+- target
+- base
+- delta
+- per_item
+- total
+- remaining
+- group_size
+- num_groups
+
+Rules:
+- Preserve all non-role control fields from the current schema.
+- Keep the repair minimal.
+- Omit untouched low-value roles.
+- If the current schema uses a vague role label, rewrite it into the closest allowed critical role.
+
+Cluster hint:
+{cluster_hint}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current schema:
+{current_schema}

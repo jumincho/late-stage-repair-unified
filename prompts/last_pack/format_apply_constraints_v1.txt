@@ -1,0 +1,13 @@
+VERSION: v2
+
+Rewrite the content below so it fully satisfies the original prompt's explicit output instructions and constraints.
+Satisfy every explicit count, formatting rule, and forbidden-token rule exactly.
+Check the constraints one by one before you finish.
+
+Return only the final answer with no commentary.
+
+Original prompt:
+{prompt}
+
+Content to preserve:
+{content}

@@ -1,0 +1,40 @@
+VERSION: atlas_rg_retrieval_role_schema_v1
+
+Use the retrieved audited exemplars to extract a compact role-grounded operator schema for this problem.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other</final_target_type>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other</operator_family>
+<relation_chain>short dependency list using only assignment-style statements or none</relation_chain>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference</geometry_formula_family>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Rules:
+- Match the role semantics used in the audited exemplars, not their wording.
+- Prioritize correct target/base/delta/per_item/total assignments over verbose quantity lists.
+- Every `role=` value must be chosen from the allowed role vocabulary only.
+- If the draft or retrieved examples suggest a vague label like `count`, `amount`, or `value`, map it to the closest allowed compiler-relevant role instead.
+- Prefer explicit discretization and postprocess flags when the target semantics are not exact arithmetic.
+- `complete=yes` only if the critical role fields and control fields are present.
+
+Cluster hint:
+{cluster_hint}
+
+Role signature hint:
+{role_signature}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

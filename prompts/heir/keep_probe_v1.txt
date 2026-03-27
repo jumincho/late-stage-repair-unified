@@ -1,0 +1,17 @@
+VERSION: heir_keep_probe_v1
+
+Preview whether the current draft is already good enough to keep without correction.
+Return only:
+<keep_recommendation>keep|intervene</keep_recommendation>
+<draft_complete>yes|no</draft_complete>
+<risk>0|1|2</risk>
+<gap>NONE or one short concrete weakness</gap>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

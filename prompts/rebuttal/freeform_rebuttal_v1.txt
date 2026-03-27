@@ -1,0 +1,31 @@
+VERSION: freeform_rebuttal_v1
+
+Return valid JSON only.
+
+Given the draft and a devil's-advocate critique, produce a concise rebuttal summary.
+
+Requirements:
+- Accept only concerns that genuinely matter.
+- Reject weak concerns explicitly.
+- Name the decisive constraint or check.
+- Keep the revised plan short.
+
+JSON schema:
+{
+  "accepted_points": ["short accepted point"],
+  "rejected_points": ["short rejected point"],
+  "decisive_constraint": "short decisive check",
+  "revised_plan": "short plan for the final fresh answer"
+}
+
+Question:
+{question}
+
+Draft:
+{draft_json}
+
+Devil's-advocate critique:
+{counter_json}
+
+Options:
+{options_block}

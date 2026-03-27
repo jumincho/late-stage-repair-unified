@@ -1,0 +1,44 @@
+VERSION: cass_critical_role_patch_v1
+
+Patch only the highest-value role fields of the current frozen baseline schema.
+Return only:
+<target_variable>short snake_case target name or empty</target_variable>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=... or empty</quantities>
+<relation_chain>short dependency list using assignment-style statements, none, or empty</relation_chain>
+<complete>yes|no</complete>
+
+Only repair these roles when needed:
+- target
+- base
+- delta
+- per_item
+- total
+- remaining
+- group_size
+- num_groups
+
+Rules:
+- Preserve all non-role fields from the current schema.
+- Emit only fields that should change.
+- Keep the repair minimal.
+
+Cluster hint:
+{cluster_hint}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Role checker:
+{role_checker}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current frozen baseline schema:
+{current_schema}

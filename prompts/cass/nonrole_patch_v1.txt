@@ -1,0 +1,36 @@
+VERSION: cass_nonrole_patch_v1
+
+Patch only the non-role control fields of the current frozen baseline schema.
+Return only:
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other or empty</final_target_type>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other or empty</operator_family>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest, or empty</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times, or empty</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference or empty</geometry_formula_family>
+<complete>yes|no</complete>
+
+Rules:
+- Preserve target binding and quantity-role assignments from the current schema.
+- Emit only fields that should change.
+- Keep the repair minimal.
+
+Cluster hint:
+{cluster_hint}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Target/postprocess checker:
+{target_checker}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current frozen baseline schema:
+{current_schema}

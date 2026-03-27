@@ -1,0 +1,24 @@
+VERSION: v2
+
+The previous planning attempt failed validation.
+
+Return exactly these tags and nothing else:
+<plan>comma-separated moves using only the allowed move tokens from the task</plan>
+<summary>one short sentence</summary>
+
+Original task:
+{task_block}
+
+Validator feedback:
+- failure_type: {failure_type}
+- first_invalid_step: {first_invalid_step}
+- valid_prefix_length: {valid_prefix_length}
+- current_state_after_prefix: {current_state}
+- previous_plan: {previous_plan}
+
+Write a complete new plan from the original start to the goal.
+Track the full state after each move so you do not make an illegal transition.
+In `<plan>`, write only the move tokens themselves, never map symbols such as `S`, `G`, `K`, or `D`.
+
+Reminder example:
+- if the current task is a line with moves `L,R`, a complete valid plan might look like `L,L,R,R,R`.

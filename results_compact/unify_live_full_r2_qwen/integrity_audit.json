@@ -1,0 +1,6 @@
+{
+  "model_name": "Qwen/Qwen2.5-7B-Instruct",
+  "run_root": "/workspace/project/results/unify_live_full_qwen/qwen7b_live_20260324a",
+  "paper_safe": true,
+  "restart_logs": []
+}

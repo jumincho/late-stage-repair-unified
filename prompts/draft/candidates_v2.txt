@@ -1,0 +1,33 @@
+VERSION: draft_candidates_v2
+
+Return valid JSON only.
+
+Generate up to {max_candidates} concise hypothesis candidates for the question.
+
+Requirements:
+- Candidates are hypothesis options, not guaranteed correct answers.
+- Avoid near-duplicates by normalized answer.
+- For numeric/open-ended tasks, make candidates differ by likely failure mode, not only wording.
+- Use short, concrete answers.
+- If two candidates imply the same normalized answer, keep only one.
+
+JSON schema:
+{
+  "candidates": [
+    {
+      "option_id": "A",
+      "answer": "candidate answer",
+      "normalized_answer": "normalized form",
+      "source": "self",
+      "persona": "",
+      "failure_mode": "short failure mode tag",
+      "short_rationale": "why a fallible model might pick it"
+    }
+  ]
+}
+
+Question:
+{question}
+
+Options:
+{options_block}

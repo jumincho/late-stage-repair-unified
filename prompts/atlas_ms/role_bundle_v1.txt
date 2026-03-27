@@ -1,0 +1,48 @@
+VERSION: atlas_ms_role_bundle_v1
+
+Repair only the quantity-role bundle G3.
+Return only:
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Use only this role vocabulary:
+- target
+- total
+- part
+- remaining
+- removed
+- added
+- base
+- delta
+- per_item
+- num_items
+- rate_numerator
+- rate_denominator
+- group_size
+- num_groups
+- comparison_base
+- comparison_difference
+- geometric_measure
+
+Rules:
+- Preserve operator/discretization, target binding, and postprocess assumptions from the current schema.
+- Repair only quantity-role assignments.
+
+Cluster hint:
+{cluster_hint}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current schema:
+{current_schema}

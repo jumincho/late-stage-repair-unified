@@ -1,0 +1,18 @@
+VERSION: eir_freeform_probe_v1
+
+You are previewing a concise corrective action.
+Given the problem and current draft, identify the most likely concrete weakness.
+Return only:
+<error_type>arithmetic_slip|wrong_equation|missed_constraint|unit_rate_confusion|entity_swap|semantic_misread|unclear</error_type>
+<target>specific quantity, step, or assumption</target>
+<challenge>one-sentence strongest challenge</challenge>
+<specificity>0|1|2</specificity>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

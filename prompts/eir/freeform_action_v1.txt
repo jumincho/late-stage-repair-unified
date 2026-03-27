@@ -1,0 +1,19 @@
+VERSION: eir_freeform_action_v1
+
+Revise the draft once after a concise strongest challenge.
+Return only:
+<answer>final answer only</answer>
+<scratch>short revised working</scratch>
+<decision>keep|revise</decision>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Strongest challenge:
+{challenge}

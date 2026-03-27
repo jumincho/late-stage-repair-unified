@@ -1,0 +1,54 @@
+VERSION: cass_role_patch_v1
+
+Patch only quantity-role grounding fields of the current frozen baseline schema.
+Return only:
+<target_variable>short snake_case target name or empty</target_variable>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=... or empty</quantities>
+<relation_chain>short dependency list using assignment-style statements, none, or empty</relation_chain>
+<unresolved_items_count>integer or empty</unresolved_items_count>
+<complete>yes|no</complete>
+
+Use only this role vocabulary:
+- target
+- total
+- part
+- remaining
+- removed
+- added
+- base
+- delta
+- per_item
+- num_items
+- rate_numerator
+- rate_denominator
+- group_size
+- num_groups
+- comparison_base
+- comparison_difference
+- geometric_measure
+
+Rules:
+- Preserve operator/discretization and non-role control fields from the current schema.
+- Emit only fields that should change.
+- Keep the role patch minimal and compiler-ready.
+
+Cluster hint:
+{cluster_hint}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Role checker:
+{role_checker}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current frozen baseline schema:
+{current_schema}

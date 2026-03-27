@@ -1,0 +1,19 @@
+VERSION: tier_operator_probe_v1
+
+Identify the compact operator/discretization schema needed for executable recomputation.
+Return only:
+<operator_family>one short label such as add_subtract|multiply_divide|ratio_rate|geometry|counting|comparison|fraction_percent</operator_family>
+<discretization>none|ceil|floor|remainder|next_multiple|approximate|exact_integer</discretization>
+<target_type>count|amount|length|area|time|rate|ratio|percent|other</target_type>
+<formula_family>short formula label or none</formula_family>
+<mapping>one-line description of the quantity mapping</mapping>
+<complete>yes|no</complete>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

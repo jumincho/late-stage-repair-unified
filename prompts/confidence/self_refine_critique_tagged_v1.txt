@@ -1,0 +1,21 @@
+VERSION: self_refine_critique_tagged_v1
+
+Write a concise self-critique of the current arithmetic answer.
+
+Rules:
+- Focus on arithmetic slips, missing constraints, unit/rate mistakes, or semantic misread.
+- Keep it concise and observable.
+- Do not include markdown.
+
+Required format:
+<critique>1-2 short sentences</critique>
+<fix>one short fix hint</fix>
+
+Question:
+{question}
+
+Current answer:
+{answer}
+
+Current short work:
+{scratch}

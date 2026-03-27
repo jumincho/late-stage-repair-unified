@@ -1,0 +1,22 @@
+VERSION: v1
+
+Derive a compact governing equation for the arithmetic problem and choose a solve path.
+Return tags only.
+
+Required tags:
+<equation>python-style governing equation or equation skeleton</equation>
+<direct_expr>single python arithmetic expression for the final answer, or blank</direct_expr>
+<solve_mode>direct|python</solve_mode>
+<code>minimal python that stores the final numeric answer in result, or blank</code>
+<answer>short numeric answer guess</answer>
+<scratch>one short sentence</scratch>
+
+Rules:
+- Use Python arithmetic syntax.
+- Use `direct` when one compact expression is enough.
+- Use `python` when rounding, remainder logic, or multiple intermediate variables are needed.
+- If you use python, assign the final value to `result`.
+- Do not add any text outside the tags.
+
+Question:
+{question}

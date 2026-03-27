@@ -1,0 +1,39 @@
+VERSION: freeform_final_same_context_v1
+
+Return valid JSON only.
+
+Produce the final answer in the same context after reading:
+- the original draft
+- the devil's-advocate critique
+- the rebuttal summary
+
+Requirements:
+- Keep the answer concise.
+- Do not invent a long explanation.
+- Use the rebuttal summary directly.
+
+JSON schema:
+{
+  "answer": "short final answer string",
+  "normalized_answer": "normalized answer string",
+  "justification": "2-4 short sentences",
+  "confidence": "low|medium|high"
+}
+
+Question:
+{question}
+
+Draft:
+{draft_json}
+
+Devil's-advocate critique:
+{counter_json}
+
+Rebuttal:
+{rebuttal_json}
+
+Short rebuttal summary:
+{rebuttal_summary}
+
+Options:
+{options_block}

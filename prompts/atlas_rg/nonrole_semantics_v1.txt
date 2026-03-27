@@ -1,0 +1,27 @@
+VERSION: atlas_rg_nonrole_semantics_v1
+
+Extract only the non-role control fields for executable arithmetic.
+Return only:
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other</final_target_type>
+<operator_family>additive|multiplicative|ratio|rate|partition|comparison|geometry|percent|average|counting|other</operator_family>
+<discretization_flags>comma-separated flags from none, exact, ceil, floor, remainder, divisible, approximate, round_nearest</discretization_flags>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times</postprocess_flags>
+<geometry_formula_family>none|rectangle_area|square_area|triangle_area|rectangle_perimeter|circle_area|circle_circumference</geometry_formula_family>
+<complete>yes|no</complete>
+
+Rules:
+- Focus only on operator family, target type, discretization, postprocess, and geometry family.
+- Do not restate the question.
+- `complete=yes` only if those non-role control fields are sufficiently specified.
+
+Cluster hint:
+{cluster_hint}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

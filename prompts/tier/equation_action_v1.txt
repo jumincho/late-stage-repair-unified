@@ -1,0 +1,20 @@
+VERSION: tier_equation_action_v1
+
+Use the variable/equation sketch to write short executable arithmetic/python.
+Return only:
+<equations>cleaned compact equation sketch</equations>
+<code>assign the final numeric result to a variable named result whenever possible</code>
+<answer>best final numeric answer based on the code</answer>
+<scratch>one or two short lines describing the equation-to-code derivation</scratch>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Equation preview:
+{equation_preview}

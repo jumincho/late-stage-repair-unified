@@ -1,0 +1,23 @@
+VERSION: atlas_field_quantities_v1
+
+Extract only the quantity-role layout for executable arithmetic.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<quantities>name=value|unit=unit_or_none|role=role|entity=entity; name=value|unit=...|role=...|entity=...</quantities>
+<relation_chain>short dependency list or none</relation_chain>
+<unresolved_items_count>integer</unresolved_items_count>
+<complete>yes|no</complete>
+
+Rules:
+- Include quantity roles/entities when they matter for rate, ratio, packaging, leftover, or comparison semantics.
+- Use numeric values only in the quantity list.
+- Keep the relation chain short and compiler-ready.
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}

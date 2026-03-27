@@ -1,0 +1,23 @@
+VERSION: v1
+
+Choose one execution strategy for this arithmetic problem.
+Return tags only.
+
+Required tags:
+<strategy>KEEP|RAW_PYTHON|OPERATOR_SCHEMA_TO_CODE_BASE|ATLAS_FIELDWISE_SCHEMA_TO_CODE</strategy>
+<reason>one short sentence</reason>
+
+Strategy notes:
+- KEEP: use the current draft unchanged if it already matches the target cleanly.
+- RAW_PYTHON: use short direct recomputation when the arithmetic mapping is straightforward.
+- OPERATOR_SCHEMA_TO_CODE_BASE: use structured operator/discretization mapping when complement, leftover, comparison, or rounding semantics matter.
+- ATLAS_FIELDWISE_SCHEMA_TO_CODE: use decomposed field extraction when quantity-role or target binding seems ambiguous.
+
+Question:
+{question}
+
+Current draft answer:
+{answer}
+
+Current draft scratch:
+{scratch}

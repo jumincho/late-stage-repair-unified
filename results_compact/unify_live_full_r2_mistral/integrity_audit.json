@@ -1,0 +1,8 @@
+{
+  "model_name": "mistralai/Mistral-7B-Instruct-v0.3",
+  "run_root": "/workspace/project/results/unify_live_full_mistral/mistral7b_live_20260324a",
+  "paper_safe": true,
+  "restart_logs": [
+    "restart_20260325b.log"
+  ]
+}

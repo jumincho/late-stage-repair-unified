@@ -1,0 +1,2027 @@
+{
+  "dataset": "ifeval_screened",
+  "entries": [
+    {
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "key": 2475,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": "Let me know if you have additional questions.",
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a TLDR for the recent conflict between ISIL and the US in conversational bullet points. End your response with this exact phrase: \"Let me know if you have additional questions.\", and no other words should follow this phrase."
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_sentences"
+      ],
+      "key": 1268,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": 6,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "less than",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Can you give me an example for a journal entry about stress management? Tell me how you come up with the example. Your entire response should contain less than 6 sentences."
+    },
+    {
+      "instruction_id_list": [
+        "startend:end_checker"
+      ],
+      "key": 1446,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": "Is there anything else I can help with?",
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write an article about the reality of disability. Your article must end with the exact phrase \"Is there anything else I can help with?\". No other words should follow this phrase."
+    },
+    {
+      "instruction_id_list": [
+        "keywords:forbidden_words",
+        "detectable_format:number_bullet_lists"
+      ],
+      "key": 1936,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": [
+            "bad",
+            "underperform"
+          ],
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": 6,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a rubric, in the form of a list of bullet points, for evaluating the performance of a customer service representative. Your answer must not include keywords ['bad', 'underperform'] and must contain exactly 6 bullet points in the following form:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\n* Bullet point 4\n* Bullet point 5\n* Bullet point 6"
+    },
+    {
+      "instruction_id_list": [
+        "combination:two_responses"
+      ],
+      "key": 2383,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Is the sentence \"Mrs. Smith is the teacher of this class.\" grammatically correct? Give me exactly two different responses. Responses and only responses should be separated by 6 asterisk symbols: ******."
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_sentences",
+        "length_constraints:number_words"
+      ],
+      "key": 1879,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": 60,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "at least",
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": 600,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "less than",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Can you please continue and expand: \"A man is performing for a crowd on a stage, ...\"\nUse at least 60 sentences, but less than 600 words."
+    },
+    {
+      "instruction_id_list": [
+        "change_case:english_lowercase"
+      ],
+      "key": 1087,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a detailed review of the movie \"The Social Network\". Your entire response should be in English and all lower case (no capital letters whatsoever)."
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs",
+        "detectable_format:number_bullet_lists"
+      ],
+      "key": 2118,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": 3,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": 3,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a rap for moms about the pros and cons of breast feeding versus formula. The rap song should have exactly 3 paragraphs each separated by *** and exactly 3 bullet points in markdown format."
+    },
+    {
+      "instruction_id_list": [
+        "change_case:english_lowercase",
+        "keywords:letter_frequency"
+      ],
+      "key": 1122,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": 4,
+          "let_relation": "at least",
+          "letter": "#",
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "make a tweet for playboy's twitter account without using capital letters. Include at least 4 hashtags, starting with '#'"
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_sentences"
+      ],
+      "key": 2617,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": 6,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "less than",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Tulsa is a professional dog walker. Write a description for Tulsa's day-to-day work. Make sure that your entire response has less than 6 sentences."
+    },
+    {
+      "instruction_id_list": [
+        "change_case:capital_word_frequency",
+        "length_constraints:number_sentences"
+      ],
+      "key": 1653,
+      "kwargs": [
+        {
+          "capital_frequency": 4,
+          "capital_relation": "less than",
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": 10,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "at least",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "I work in the marketing department and I need your help. I need a template for an advertisement for a new product which is a portable camera. In the template, capitalize a few words to stress main points. Please limit the number of words with all capital letters to less than four. Your response should contain at least ten sentences."
+    },
+    {
+      "instruction_id_list": [
+        "change_case:capital_word_frequency"
+      ],
+      "key": 1592,
+      "kwargs": [
+        {
+          "capital_frequency": 3,
+          "capital_relation": "at least",
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Summarize the following paragraph. Use words in all capital letters at least 3 times to highlight key points.\n\nHow to get to 100% renewable energy in the US? Two researchers from Stanford University and the University of California, Berkeley studied the potential for solar and wind energy to power the US grid. They concluded that it is possible to get to 100% renewable energy by 2050 by building more solar and wind farms. The authors also pointed out that such a system would be less vulnerable to disruptions than the current grid, which is reliant on a few large power plants. The authors' plan would also create jobs and reduce pollution."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "key": 2381,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": 3,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a cover letter to a local political party, asking to be their rally organizer. Make sure to highlight at least 3 sections in your answer in markdown format."
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs",
+        "keywords:frequency"
+      ],
+      "key": 2386,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": 3,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": 1,
+          "keyword": "humming",
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "at least",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Can you expand the following sentences: \"I have never seen a localized version of the software. I have seen an international version.\"\n\nI would like for there to be exactly 3 paragraphs each separated by three asterisk symbols (***) and for the word humming to be used at least once."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:json_format",
+        "keywords:forbidden_words"
+      ],
+      "key": 2395,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": [
+            "flea",
+            "json"
+          ],
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a facebook post about a flea market in JSON format. Do not include keywords 'flea' and 'JSON' in the response."
+    },
+    {
+      "instruction_id_list": [
+        "keywords:existence"
+      ],
+      "key": 1531,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": [
+            "atlantis",
+            "constable"
+          ],
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Come up with a proposal for a new research project on how to improve the quality of life for people with disabilities. Your response should be able to be rendered as HTML, and should include the keywords 'atlantis' and 'constable'."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_content:number_placeholders"
+      ],
+      "key": 1927,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": 10,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Rewrite the following sentence into an email, and make sure it contains at least 10 placeholders represented by square brackets, such as [name]: The boots are warm but a little uncomfortable."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists",
+        "change_case:english_lowercase"
+      ],
+      "key": 1287,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": 3,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "How did a man named John of Brienne become the King of Jerusalem? Explain in a Zen-like style. Your answer should use all lowercase letters and must also contain exactly 3 bullet points in markdown format. Use * to indicate bullets, like:\n* xyz\n* abc\n* opq"
+    },
+    {
+      "instruction_id_list": [
+        "startend:quotation"
+      ],
+      "key": 2985,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Why do you think Google engineers stay at Google more often than moving to Microsoft? Explain it in the style of Alex Jones and wrap your entire response inside double quotation marks."
+    },
+    {
+      "instruction_id_list": [
+        "keywords:letter_frequency",
+        "keywords:forbidden_words"
+      ],
+      "key": 1402,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": 15,
+          "let_relation": "at least",
+          "letter": "p",
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": [
+            "dupage",
+            "dade"
+          ],
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "I'm interested in a college with open enrollment and a regional accreditation. Which college would you recommend? Don't include the keywords \"DuPage\" and \"Dade\" in your response. Let's make it a constrained writing problem: be sure the letter p appears at least 15 times in your response."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:json_format"
+      ],
+      "key": 2857,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a rubric for performance review of a software engineer and wrap the entire output in JSON format. You can use markdown ticks such as ```."
+    },
+    {
+      "instruction_id_list": [
+        "combination:two_responses",
+        "punctuation:no_comma"
+      ],
+      "key": 2436,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Give two different responses to the question \"Is it ethical to hunt and eat invasive species?\", separated by 6 asterisk symbols ****** and without using any commas."
+    },
+    {
+      "instruction_id_list": [
+        "keywords:frequency"
+      ],
+      "key": 2142,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": 2,
+          "keyword": "predatory",
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "at least",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a proposal for a new university course on \"The History of the World, as Told by Dogs.\" Make sure the word predatory appears at least twice in the proposal."
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_sentences"
+      ],
+      "key": 2780,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": 6,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "less than",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Can you provide me with the timetable for the next train to London? Please respond in less than 6 sentences."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+      ],
+      "key": 2832,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": 1,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Imagine you're a 19 year old and you're making a video game. The game is about a boy who has to save the world from a villain. Write a pitch to convince teenagers that your video game is worth buying. Your answer must include exactly one bullet point in markdown format."
+    },
+    {
+      "instruction_id_list": [
+        "punctuation:no_comma"
+      ],
+      "key": 2825,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "How can you get to know someone on a deep level in a romantic relationship? The answer should involve the topic of vulnerability. Do not use any commas in your response."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "key": 2273,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": "P.P.S",
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "11 results have an average of 51. The first five have an average of 49, and the last nine have an average of 52. What was the sixth result? Use weird language when explaining using mathematical notation. And add a postscript starting with P.P.S at the end."
+    },
+    {
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "key": 2464,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": "hi",
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "What are some good ideas for startup companies? Write a Hindi poem about this. Use only Hindi in your response, no other language is allowed."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+      ],
+      "key": 1307,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": 15,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write an outline for a paper on the history of Yemeni coffee. The outline should include the main points of the paper, and at least 15 sections should be highlighted with markdown such as *highlighted section*."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_content:postscript"
+      ],
+      "key": 2622,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": "P.S.",
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Melbourne has a newspaper called the Herald Sun. Can you suggest a name for a new newspaper for Melbourne teenagers? Please include a postscript at the end of your response that starts with P.S."
+    },
+    {
+      "instruction_id_list": [
+        "change_case:english_lowercase",
+        "punctuation:no_comma",
+        "detectable_content:postscript"
+      ],
+      "key": 2216,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        },
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": "P.P.S",
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a detailed proposal in list format for the university's ethics board for a research project that investigates the effect of eye colour on the likelihood of being a successful salesperson. Remember that the customer is always right. Your entire response should be in English, and in all lowercase letters. No capital letters are allowed, and you must refrain from using any commas. At the end of your response, please explicitly add a postscript starting with P.P.S"
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+      ],
+      "key": 2457,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": 4,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a short summary for kids that explains why we want to honour Thayer for his contributions to the field of artificial intelligence. The summary must contain exactly 4 bullet points such as:\n* Bullet point 1\n* Bullet point 2"
+    },
+    {
+      "instruction_id_list": [
+        "keywords:forbidden_words"
+      ],
+      "key": 2534,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": [
+            "schlau"
+          ],
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Translate the following sentence into German and then criticize it: Werner was a good friend of mine, but not very smart.\nAvoid the word \"schlau\" throughout your response."
+    },
+    {
+      "instruction_id_list": [
+        "startend:quotation"
+      ],
+      "key": 281,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a joke about xml with a setup and a punchline. Wrap your entire response in double quotation marks."
+    },
+    {
+      "instruction_id_list": [
+        "keywords:existence"
+      ],
+      "key": 2662,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": [
+            "engages",
+            "lightly"
+          ],
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a tweet for the president of the United States. The tweet should include the keywords \"engages\" and \"lightly\"."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+      ],
+      "key": 2078,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": 1,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a riddle about a mongoose that includes exactly one bullet point. Make sure to include a few bullet points indicated by *, such as:\n* Bullet point"
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_paragraphs"
+      ],
+      "key": 1236,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": 3,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write an advertisement for a new line of comfortable armchairs designed to withstand the scrutiny of any interior designer. There should be exactly 3 paragraphs separated by the markdown divider: ***."
+    },
+    {
+      "instruction_id_list": [
+        "keywords:letter_frequency"
+      ],
+      "key": 2768,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": 5,
+          "let_relation": "at least",
+          "letter": "q",
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a template that I can use to ask my manager about the budgets for the next quarter. The template should include the letter q at least 5 times."
+    },
+    {
+      "instruction_id_list": [
+        "combination:repeat_prompt"
+      ],
+      "key": 288,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": "Is ballistics (the study of the motion of projectiles) an actual science?",
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Is ballistics (the study of the motion of projectiles) an actual science?\nFirst repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)"
+    },
+    {
+      "instruction_id_list": [
+        "change_case:english_capital"
+      ],
+      "key": 1566,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a song about regrets in the style of Taylor Swift. Please include explanations for the lyrics you write. Make sure your entire response is in English, and in all capital letters."
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:number_words"
+      ],
+      "key": 1072,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": 400,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": "at least",
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Write a blog post with 400 or more words about the benefits of sleeping in a hammock."
+    },
+    {
+      "instruction_id_list": [
+        "startend:quotation"
+      ],
+      "key": 219,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Do you think Kareena Kapoor is a good actor? Wrap your response with double quotation marks."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:multiple_sections"
+      ],
+      "key": 2925,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": 3,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": "SECTION"
+        }
+      ],
+      "prompt": "Write a joke about anarchists in Tulsa in 3 sections. Mark the beginning of each section with SECTION X."
+    },
+    {
+      "instruction_id_list": [
+        "detectable_format:json_format"
+      ],
+      "key": 13,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "What is the history of NYC prospect park? Please wrap your entire answer in JSON format. You can use markdown ticks such as ```. For example:\n```JSON\n{\n...\n}\n```"
+    },
+    {
+      "instruction_id_list": [
+        "length_constraints:nth_paragraph_first_word"
+      ],
+      "key": 1954,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": "summary",
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": 7,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": 7,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "What are the uses of poppy seeds? Your answer should have exactly 7 paragraphs and the last paragraph must start with the word \"Summary\". Each paragraph should be separated by two new lines."
+    },
+    {
+      "instruction_id_list": [
+        "combination:repeat_prompt"
+      ],
+      "key": 2482,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": "Rewrite the following sentence in a style that is unusual: \"But when the people of the land came to know that the Philistines had fled, they departed from Saul and went after David.\"",
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Rewrite the following sentence in a style that is unusual: \"But when the people of the land came to know that the Philistines had fled, they departed from Saul and went after David.\"\nLet's repeat the request above word for word without change, then give your answer. Do not output any word before the request above is repeated."
+    },
+    {
+      "instruction_id_list": [
+        "change_case:english_capital"
+      ],
+      "key": 2563,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": null,
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Rewrite the following text so that it is funny to software engineers using notations from the book \"The C Programming Language\": \"The use of the various constructions described in this chapter is one of the most distinctive features of the C programming language.\" Make this sound like it is being said by the president of the United States and capitalize every letter."
+    },
+    {
+      "instruction_id_list": [
+        "language:response_language"
+      ],
+      "key": 2685,
+      "kwargs": [
+        {
+          "capital_frequency": null,
+          "capital_relation": null,
+          "end_phrase": null,
+          "first_word": null,
+          "forbidden_words": null,
+          "frequency": null,
+          "keyword": null,
+          "keywords": null,
+          "language": "kn",
+          "let_frequency": null,
+          "let_relation": null,
+          "letter": null,
+          "nth_paragraph": null,
+          "num_bullets": null,
+          "num_highlights": null,
+          "num_paragraphs": null,
+          "num_placeholders": null,
+          "num_sections": null,
+          "num_sentences": null,
+          "num_words": null,
+          "postscript_marker": null,
+          "prompt_to_repeat": null,
+          "relation": null,
+          "section_spliter": null
+        }
+      ],
+      "prompt": "Please give me some recommendations for good books about the history of the United States. Your response should be completely in Kannada, no other language is allowed."
+    }
+  ],
+  "surface": "ifeval_screened"
+}

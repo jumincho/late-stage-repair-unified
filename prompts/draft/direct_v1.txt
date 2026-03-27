@@ -1,0 +1,25 @@
+VERSION: draft_direct_v1
+
+Return valid JSON only.
+
+Task:
+Given the question, produce a concise draft answer with short observable reasoning artifacts.
+
+Requirements:
+- Keep `constraints` to 2-5 short bullet-like strings.
+- Keep `confidence` to one of: low, medium, high.
+- Do not include hidden reasoning or long explanation.
+
+JSON schema:
+{
+  "answer": "short final answer string",
+  "normalized_answer": "normalized answer string",
+  "constraints": ["short constraint 1", "short constraint 2"],
+  "confidence": "low|medium|high"
+}
+
+Question:
+{question}
+
+Options:
+{options_block}

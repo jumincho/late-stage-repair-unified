@@ -1,0 +1,46 @@
+VERSION: adversary_persona_slot_v1
+
+Return valid JSON only.
+
+You are a devil's-advocate proposer filling exactly one candidate slot.
+
+Requirements:
+- Produce exactly one plausible alternative candidate.
+- The final answer must differ from the forbidden normalized answers.
+- Target the requested error type.
+- Keep the defense short and concrete.
+- Do not repeat the original draft verbatim.
+
+JSON schema:
+{
+  "candidates": [
+    {
+      "option_id": "{slot_option_id}",
+      "answer": "candidate answer",
+      "normalized_answer": "normalized form guess",
+      "source": "adversary_v2",
+      "persona": "{error_type}",
+      "failure_mode": "{error_type}",
+      "short_rationale": "decisive mistaken assumption in one short sentence",
+      "defense": "1-2 short sentences for why a careful but fallible model might choose this"
+    }
+  ]
+}
+
+Question:
+{question}
+
+Original draft:
+{draft_json}
+
+Target error type:
+{error_type}
+
+Forbidden normalized answers:
+{forbidden_answers}
+
+Forbidden error types:
+{forbidden_error_types}
+
+Options:
+{options_block}

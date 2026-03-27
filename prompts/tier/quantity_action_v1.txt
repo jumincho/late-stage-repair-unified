@@ -1,0 +1,21 @@
+VERSION: tier_quantity_action_v1
+
+Use the typed quantity table to write short executable arithmetic/python.
+Be explicit about any remainder / next-multiple / ceiling / floor / approximation behavior if needed.
+Return only:
+<quantity_table>cleaned compact quantity table</quantity_table>
+<code>assign the final numeric result to a variable named result whenever possible</code>
+<answer>best final numeric answer based on the code</answer>
+<scratch>one or two short lines describing the typed computation</scratch>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Quantity preview:
+{quantity_preview}

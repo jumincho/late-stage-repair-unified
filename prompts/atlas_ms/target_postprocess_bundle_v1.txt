@@ -1,0 +1,32 @@
+VERSION: atlas_ms_target_postprocess_bundle_v1
+
+Repair only the target / postprocess bundle G2.
+Return only:
+<target_variable>short snake_case target name</target_variable>
+<final_target_type>count|money|distance|rate|proportion|area|remainder|average|comparison|percent|other</final_target_type>
+<relation_chain>short dependency list using assignment-style statements or none</relation_chain>
+<postprocess_flags>comma-separated flags from none, leftover, difference, complement, per_item, total, repeated_times</postprocess_flags>
+<complete>yes|no</complete>
+
+Rules:
+- Preserve operator/discretization and quantity-role fields from the current schema.
+- Repair only G2.
+- Be explicit when the target is a complement, difference, leftover, or comparison quantity.
+
+Cluster hint:
+{cluster_hint}
+
+Retrieved exemplars:
+{retrieved_examples}
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Current schema:
+{current_schema}

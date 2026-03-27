@@ -1,0 +1,22 @@
+VERSION: challenge_tagged_v1
+
+Write the strongest concise devil's-advocate challenge against the current answer.
+
+Rules:
+- Target one realistic arithmetic or constraint failure mode.
+- Prefer arithmetic slip, wrong equation, ignored condition, unit/rate confusion, entity swap, or semantic misread.
+- Keep it concise.
+- Do not include markdown.
+
+Required format:
+<attack>1-2 short sentences challenging the answer</attack>
+<risk>short failure-mode tag</risk>
+
+Question:
+{question}
+
+Current answer:
+{answer}
+
+Current short work:
+{scratch}

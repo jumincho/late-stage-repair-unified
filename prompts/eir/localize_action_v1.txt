@@ -1,0 +1,20 @@
+VERSION: eir_localize_action_v1
+
+Represent the draft as a few discrete steps, identify the most suspect one, and regenerate from the last reliable point.
+Return only:
+<steps>semicolon-separated brief steps</steps>
+<suspect>suspect step or assumption</suspect>
+<answer>final answer only</answer>
+<scratch>short repaired working</scratch>
+
+Problem:
+{question}
+
+Draft answer:
+{answer}
+
+Draft working:
+{scratch}
+
+Localization preview:
+{localize_preview}

@@ -1,0 +1,38 @@
+# UNIFY-LIVE-FULL-R2 Integrity Report
+
+## Main read
+
+- `Qwen2.5-7B-Instruct` paper-safe verdict: `1`; restart logs present: `none`.
+- `Mistral-7B-Instruct-v0.3` paper-safe verdict: `1`; restart logs present: `restart_20260325b.log`.
+
+## 7B surface integrity table
+
+| model_name                         | phase_name          | module   | surface_name    |   expected_rows |   actual_rows |   unique_ids |   duplicate_ids |   duplicate_example_action_rows |   shard_count |   complete_shards |   parse_success_rate |   validator_ready_rate |   required_action_coverage |   paper_safe_surface |
+|:-----------------------------------|:--------------------|:---------|:----------------|----------------:|--------------:|-------------:|----------------:|--------------------------------:|--------------:|------------------:|---------------------:|-----------------------:|---------------------------:|---------------------:|
+| Qwen/Qwen2.5-7B-Instruct           | math_cluster_raw    | math     | cluster-hard    |            1515 |          1515 |         1515 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-7B-Instruct           | math_generic_raw    | math     | generic-hard    |             483 |           483 |          483 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-7B-Instruct           | math_cluster_replay | math     | cluster-hard    |            1515 |          1515 |         1515 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-7B-Instruct           | math_generic_replay | math     | generic-hard    |             483 |           483 |          483 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-7B-Instruct           | format_ifeval       | format   | screened IFEval |             381 |           381 |          381 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-7B-Instruct           | format_ifbench      | format   | IFBench         |             300 |           300 |          300 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| mistralai/Mistral-7B-Instruct-v0.3 | math_cluster_raw    | math     | cluster-hard    |            1515 |          1515 |         1515 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| mistralai/Mistral-7B-Instruct-v0.3 | math_generic_raw    | math     | generic-hard    |             483 |           483 |          483 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| mistralai/Mistral-7B-Instruct-v0.3 | math_cluster_replay | math     | cluster-hard    |            1515 |          1515 |         1515 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| mistralai/Mistral-7B-Instruct-v0.3 | math_generic_replay | math     | generic-hard    |             483 |           483 |          483 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| mistralai/Mistral-7B-Instruct-v0.3 | format_ifeval       | format   | screened IFEval |             381 |           381 |          381 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+| mistralai/Mistral-7B-Instruct-v0.3 | format_ifbench      | format   | IFBench         |             300 |           300 |          300 |               0 |                               0 |             4 |                 4 |                    1 |                      1 |                          1 |                    1 |
+
+## Issues
+
+- No 7B data repairs were required; both fresh prospective banks are paper-safe.
+
+## Qwen-14B partial status snapshot
+
+| model_name                | phase_name          | module   | surface_name    |   expected_rows |   actual_rows |   unique_ids |   duplicate_ids |   duplicate_example_action_rows |   shard_count |   complete_shards |   parse_success_rate |   validator_ready_rate |   required_action_coverage |   paper_safe_surface |
+|:--------------------------|:--------------------|:---------|:----------------|----------------:|--------------:|-------------:|----------------:|--------------------------------:|--------------:|------------------:|---------------------:|-----------------------:|---------------------------:|---------------------:|
+| Qwen/Qwen2.5-14B-Instruct | math_cluster_raw    | math     | cluster-hard    |            1515 |          1515 |         1515 |               0 |                               0 |             8 |                 8 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-14B-Instruct | math_generic_raw    | math     | generic-hard    |             483 |           483 |          483 |               0 |                               0 |             8 |                 8 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-14B-Instruct | math_cluster_replay | math     | cluster-hard    |            1515 |          1515 |         1515 |               0 |                               0 |             8 |                 8 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-14B-Instruct | math_generic_replay | math     | generic-hard    |             483 |           483 |          483 |               0 |                               0 |             8 |                 8 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-14B-Instruct | format_ifeval       | format   | screened IFEval |             381 |           381 |          381 |               0 |                               0 |             8 |                 8 |                    1 |                      1 |                          1 |                    1 |
+| Qwen/Qwen2.5-14B-Instruct | format_ifbench      | format   | IFBench         |             300 |           300 |          300 |               0 |                               0 |             8 |                 8 |                    1 |                      1 |                          1 |                    1 |
