@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 import hashlib
 import json
@@ -27,8 +28,10 @@ from dart_research.lace.unify import (
 )
 from dart_research.utils.io import ensure_dir, read_json, write_json, write_text
 
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
 
-REPO_ROOT = Path("/workspace/project")
+
+REPO_ROOT = Path(DART_REPO_ROOT)
 R2_SPLIT_SEEDS = [13, 29, 47]
 ABSTRACT_ACTION_SPACE = ["NO_INTERVENTION", "LOCAL_REPAIR", "GLOBAL_REWRITE_OR_RESTART"]
 EXPECTED_SURFACE_COUNTS = {

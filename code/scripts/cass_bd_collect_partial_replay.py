@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 import argparse
 import json
@@ -13,6 +14,8 @@ from dart_research.datasets.loaders import BenchmarkExample
 from dart_research.run_experiment import build_client
 from dart_research.utils.config import load_yaml
 from dart_research.utils.io import append_jsonl, ensure_dir, read_json, write_json, write_text
+
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
 
 
 def parse_args() -> argparse.Namespace:
@@ -32,7 +35,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--hf-revision", default=None)
     parser.add_argument("--cache-namespace", default="")
     parser.add_argument("--max-output-tokens", type=int, default=180)
-    parser.add_argument("--teacher-seed", default="/workspace/project/results/cass_api_diag/teacher_seed_gpt5mini_20260315_merged/teacher_seed.jsonl")
+    parser.add_argument("--teacher-seed", default=f"{DART_REPO_ROOT}/results/cass_api_diag/teacher_seed_gpt5mini_20260315_merged/teacher_seed.jsonl")
     return parser.parse_args()
 
 

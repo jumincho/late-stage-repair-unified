@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 import argparse
 import json
@@ -7,15 +8,17 @@ from pathlib import Path
 from dart_research.unify_live_full_r2 import MODEL_SPECS, audit_bank
 from dart_research.utils.io import ensure_dir, write_text
 
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--qwen-root", default="/workspace/project/results/unify_live_full_qwen/qwen7b_live_20260324a")
-    parser.add_argument("--mistral-root", default="/workspace/project/results/unify_live_full_mistral/mistral7b_live_20260324a")
-    parser.add_argument("--qwen14-root", default="/workspace/project/results/unify_live_full_qwen14b/qwen14b_live_20260324a")
-    parser.add_argument("--qwen-out", default="/workspace/project/results/unify_live_full_r2_qwen")
-    parser.add_argument("--mistral-out", default="/workspace/project/results/unify_live_full_r2_mistral")
-    parser.add_argument("--qwen14-out", default="/workspace/project/results/unify_live_full_r2_qwen14b")
+    parser.add_argument("--qwen-root", default=f"{DART_REPO_ROOT}/results/unify_live_full_qwen/qwen7b_live_20260324a")
+    parser.add_argument("--mistral-root", default=f"{DART_REPO_ROOT}/results/unify_live_full_mistral/mistral7b_live_20260324a")
+    parser.add_argument("--qwen14-root", default=f"{DART_REPO_ROOT}/results/unify_live_full_qwen14b/qwen14b_live_20260324a")
+    parser.add_argument("--qwen-out", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_qwen")
+    parser.add_argument("--mistral-out", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_mistral")
+    parser.add_argument("--qwen14-out", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_qwen14b")
     return parser.parse_args()
 
 

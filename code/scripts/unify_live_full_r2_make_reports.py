@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 import argparse
 import json
@@ -13,19 +14,21 @@ from dart_research.unify_live_full_r2 import (
 )
 from dart_research.utils.io import read_json
 
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--manifest-root", default="/workspace/project/results/unify_live_full_r2_shared")
-    parser.add_argument("--qwen-root", default="/workspace/project/results/unify_live_full_qwen/qwen7b_live_20260324a")
-    parser.add_argument("--mistral-root", default="/workspace/project/results/unify_live_full_mistral/mistral7b_live_20260324a")
-    parser.add_argument("--qwen14-root", default="/workspace/project/results/unify_live_full_qwen14b/qwen14b_live_20260324a")
-    parser.add_argument("--qwen-results", default="/workspace/project/results/unify_live_full_r2_qwen")
-    parser.add_argument("--mistral-results", default="/workspace/project/results/unify_live_full_r2_mistral")
-    parser.add_argument("--qwen14-results", default="/workspace/project/results/unify_live_full_r2_qwen14b")
-    parser.add_argument("--report-dir", default="/workspace/project/reports")
-    parser.add_argument("--table-dir", default="/workspace/project/tables/unify_live_full_r2")
-    parser.add_argument("--figure-dir", default="/workspace/project/figures/unify_live_full_r2")
+    parser.add_argument("--manifest-root", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_shared")
+    parser.add_argument("--qwen-root", default=f"{DART_REPO_ROOT}/results/unify_live_full_qwen/qwen7b_live_20260324a")
+    parser.add_argument("--mistral-root", default=f"{DART_REPO_ROOT}/results/unify_live_full_mistral/mistral7b_live_20260324a")
+    parser.add_argument("--qwen14-root", default=f"{DART_REPO_ROOT}/results/unify_live_full_qwen14b/qwen14b_live_20260324a")
+    parser.add_argument("--qwen-results", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_qwen")
+    parser.add_argument("--mistral-results", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_mistral")
+    parser.add_argument("--qwen14-results", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_qwen14b")
+    parser.add_argument("--report-dir", default=f"{DART_REPO_ROOT}/reports")
+    parser.add_argument("--table-dir", default=f"{DART_REPO_ROOT}/tables/unify_live_full_r2")
+    parser.add_argument("--figure-dir", default=f"{DART_REPO_ROOT}/figures/unify_live_full_r2")
     parser.add_argument("--qwen14-attempts-json", default="")
     return parser.parse_args()
 

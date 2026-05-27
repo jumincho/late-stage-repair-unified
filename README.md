@@ -101,6 +101,14 @@ pip install -U -e .
 export HF_TOKEN=...   # 필요한 경우에만
 ```
 
+원본 실행 환경의 절대 경로(`/workspace/project`)는 `DART_REPO_ROOT` 환경변수로
+재정의할 수 있습니다. 스크립트와 모듈의 모든 기본 경로(`data/`, `results/`,
+`reports/`, `tables/`, `figures/`, `external/`)가 이 변수를 기준으로 잡힙니다.
+
+```bash
+export DART_REPO_ROOT="$(pwd)"   # 또는 원하는 절대 경로
+```
+
 ## 상태
 
 🧊 **휴면 중** — 두 도메인을 하나의 이야기로 묶는 결론이 정리된 상태에서 멈춰 있습니다.
@@ -196,6 +204,15 @@ python3 -m venv --system-site-packages .venv
 source .venv/bin/activate
 pip install -U -e .
 export HF_TOKEN=...   # only if needed
+```
+
+The original execution environment's absolute path (`/workspace/project`) can be
+overridden via the `DART_REPO_ROOT` environment variable. All script and module
+defaults for `data/`, `results/`, `reports/`, `tables/`, `figures/`, and
+`external/` are anchored to it.
+
+```bash
+export DART_REPO_ROOT="$(pwd)"   # or any absolute path
 ```
 
 ### Status

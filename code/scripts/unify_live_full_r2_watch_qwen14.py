@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 import argparse
 import json
@@ -8,8 +9,10 @@ from typing import Any
 
 from dart_research.unify_live_full_r2 import PHASE_SPECS
 
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
 
-DEFAULT_RUN_ROOT = Path("/workspace/project/results/unify_live_full_r2_qwen14b/qwen14b_attempt2_20260326b")
+
+DEFAULT_RUN_ROOT = Path(f"{DART_REPO_ROOT}/results/unify_live_full_r2_qwen14b/qwen14b_attempt2_20260326b")
 
 
 def parse_args() -> argparse.Namespace:

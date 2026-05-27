@@ -1,30 +1,33 @@
 from __future__ import annotations
+import os
 
 import argparse
 from pathlib import Path
 
 from dart_research.unify_live_full_r2 import R2_SPLIT_SEEDS, prepare_feature_bundle
 
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output-dir", default="/workspace/project/results/unify_live_full_r2_shared")
-    parser.add_argument("--report-path", default="/workspace/project/reports/unify_live_full_r2_feature_audit.md")
+    parser.add_argument("--output-dir", default=f"{DART_REPO_ROOT}/results/unify_live_full_r2_shared")
+    parser.add_argument("--report-path", default=f"{DART_REPO_ROOT}/reports/unify_live_full_r2_feature_audit.md")
     parser.add_argument(
         "--math-cluster-source",
-        default="/workspace/project/data/cass_r3_manifests_20260315a/gsm8k_train_cluster_main_r3_full1515.json",
+        default=f"{DART_REPO_ROOT}/data/cass_r3_manifests_20260315a/gsm8k_train_cluster_main_r3_full1515.json",
     )
     parser.add_argument(
         "--math-generic-source",
-        default="/workspace/project/data/cass_r3_manifests_20260315a/gsm8k_train_generic_main_r3_full.json",
+        default=f"{DART_REPO_ROOT}/data/cass_r3_manifests_20260315a/gsm8k_train_generic_main_r3_full.json",
     )
     parser.add_argument(
         "--ifeval-source",
-        default="/workspace/project/data/lace_full_format_manifests_20260324a/ifeval_screened_le150_381.json",
+        default=f"{DART_REPO_ROOT}/data/lace_full_format_manifests_20260324a/ifeval_screened_le150_381.json",
     )
     parser.add_argument(
         "--ifbench-source",
-        default="/workspace/project/data/lace_full_format_manifests_20260324a/ifbench_main_300.json",
+        default=f"{DART_REPO_ROOT}/data/lace_full_format_manifests_20260324a/ifbench_main_300.json",
     )
     parser.add_argument("--nshards", type=int, default=4)
     parser.add_argument("--split-seeds", nargs="+", type=int, default=R2_SPLIT_SEEDS)
