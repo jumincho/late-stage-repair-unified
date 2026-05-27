@@ -11,7 +11,7 @@ MAX_MODEL_LEN="${7:-4096}"
 TRUST_REMOTE_CODE="${8:-1}"
 GPU_SLOT_COUNT="${UNIFY_LIVE_GPU_SLOTS_PER_DEVICE:-1}"
 
-ROOT="/workspace/project"
+ROOT="${DART_REPO_ROOT:-/workspace/project}"
 CACHE_NAMESPACE="unify_live_full_${MODEL_TAG}_v1"
 LOGDIR="$OUTROOT/logs"
 mkdir -p "$OUTROOT" "$OUTROOT/math_raw" "$OUTROOT/math_replay" "$OUTROOT/format" "$LOGDIR"

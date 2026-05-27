@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 import glob
 import json
@@ -7,11 +8,13 @@ from typing import Any
 
 import pandas as pd
 
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
+
 
 MATH_SURFACE_GLOBS = {
-    "easy": "/workspace/project/results/cass_main/easy_main_teacher_20260315_shard*/per_example.jsonl",
-    "medium": "/workspace/project/results/cass_main/generic_main_teacher_20260315_shard*/per_example.jsonl",
-    "hard": "/workspace/project/results/cass_main/cluster_main_teacher_20260315_shard*/per_example.jsonl",
+    "easy": f"{DART_REPO_ROOT}/results/cass_main/easy_main_teacher_20260315_shard*/per_example.jsonl",
+    "medium": f"{DART_REPO_ROOT}/results/cass_main/generic_main_teacher_20260315_shard*/per_example.jsonl",
+    "hard": f"{DART_REPO_ROOT}/results/cass_main/cluster_main_teacher_20260315_shard*/per_example.jsonl",
 }
 
 

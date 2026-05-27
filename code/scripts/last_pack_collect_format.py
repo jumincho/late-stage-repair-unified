@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 import argparse
 from datetime import UTC, datetime
@@ -22,13 +23,15 @@ from dart_research.run_experiment import build_client
 from dart_research.utils.config import load_yaml
 from dart_research.utils.io import append_jsonl, ensure_dir, read_json, write_json, write_text
 
+DART_REPO_ROOT = os.environ.get("DART_REPO_ROOT", "/workspace/project")
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--client", choices=["hf_local", "vllm"], default="hf_local")
     parser.add_argument("--surface", choices=["ifeval", "ifbench", "planning_bridge"], required=True)
-    parser.add_argument("--ifeval-repo", default="/workspace/project/external/google-research")
-    parser.add_argument("--ifbench-repo", default="/workspace/project/external/IFBench")
+    parser.add_argument("--ifeval-repo", default=f"{DART_REPO_ROOT}/external/google-research")
+    parser.add_argument("--ifbench-repo", default=f"{DART_REPO_ROOT}/external/IFBench")
     parser.add_argument("--manifest", default=None)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--offset", type=int, default=0)
