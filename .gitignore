@@ -31,7 +31,10 @@ ENV/
 credentials.json
 
 # Logs / runtime
-logs/
+# logs/ holds project documentation (research_log.md, decision_log.md);
+# only exclude runtime-generated artifacts within it.
+logs/runs/
+logs/*.jsonl
 *.log
 nohup.out
 runs/
