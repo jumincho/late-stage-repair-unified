@@ -1,4 +1,18 @@
+<div align="center">
+
 # late-stage-repair-unified
+
+**같은 단순 결정 공간이 수학과 출력제약 두 도메인 모두에서 통하는가**
+**Does the same simple decision space work across math and output-constraint domains?**
+
+![Status](https://img.shields.io/badge/status-dormant-lightgrey)
+![Language](https://img.shields.io/badge/language-Python-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)
+![Closure](https://img.shields.io/badge/closure-2026--03-blue)
+
+**한국어** · [English](#english)
+
+</div>
 
 > 🧊 **휴면(dormant) 중인 연구 파일럿입니다.**
 
@@ -90,3 +104,104 @@ export HF_TOKEN=...   # 필요한 경우에만
 ## 상태
 
 🧊 **휴면 중** — 두 도메인을 하나의 이야기로 묶는 결론이 정리된 상태에서 멈춰 있습니다.
+
+---
+
+<a name="english"></a>
+
+## English
+
+> 🧊 **Dormant research pilot.**
+
+### What this set out to test
+
+When a language model produces a final answer, it often makes small mistakes at the last step. Asking it to rewrite the whole answer is expensive and frequently breaks otherwise-good parts.
+
+The core hypothesis was simple:
+
+> Many failures need only a **small patch at the last step**, not a full rewrite.
+
+So we built a deliberately narrow three-option decision space:
+
+- Do nothing.
+- Local repair — patch only the last step.
+- Global rewrite — start over.
+
+And asked whether the same decision space holds across two domains with very different surface features:
+
+- Hard math / arithmetic problems.
+- Output-constraint satisfaction problems (outputs that must precisely respect a tricky format).
+
+Evaluated on freshly collected cases across multiple model sizes (two 7B models, one 14B).
+
+### What it found
+
+- **"Local repair" consistently beat "global rewrite"** — in math, in output-constraint problems, and even when one unified rule was applied across both.
+- **The two domains moved more similarly than expected.** Per-domain rule tuning barely improved on a single shared rule. The visually different surface ("math" vs "format-keeping") collapses onto the same underlying problem when reframed as **patching the last-step mistake**.
+- **As models scale, the absolute gain shrinks** but the pattern persists.
+- **Not strong enough to claim "one universal rule is always best."** On harder constraint problems, domain-tailored rules still helped at the margin.
+
+Full results:
+
+- 🇰🇷 [`REPORT_PROJECT_SUMMARY_KO.md`](REPORT_PROJECT_SUMMARY_KO.md)
+- 🇬🇧 [`REPORT_PROJECT_SUMMARY_EN.md`](REPORT_PROJECT_SUMMARY_EN.md)
+
+### Why it's on hold
+
+The conclusion stands clearly and the cross-domain narrative is in place. What didn't land is the original "single universal rule" — it narrowed to "shared decision geometry + a near-universal rule." A natural restart waits for the next angle (larger scale, a new tricky constraint domain) rather than pushing further now.
+
+### Where to look first when revisiting
+
+- 🇬🇧 [`REPORT_PROJECT_SUMMARY_EN.md`](REPORT_PROJECT_SUMMARY_EN.md) — single-essay final report.
+- [`reports/final/`](reports/final/) — per-domain and unified final reports.
+- [`reports/frozen_context/`](reports/frozen_context/) — pre-unification context (math side, format side).
+- [`logs/research_log.md`](logs/research_log.md), [`logs/decision_log.md`](logs/decision_log.md) — decision flow over time.
+
+### Code map
+
+| File | What it does |
+|---|---|
+| [`code/scripts/unify_live_full_r2_prepare.py`](code/scripts/unify_live_full_r2_prepare.py) | Prepares the last-round input data |
+| [`code/scripts/unify_live_full_run_family.sh`](code/scripts/unify_live_full_run_family.sh) | Per-model batch experiment runner |
+| [`code/scripts/unify_live_full_r2_watch_qwen14.py`](code/scripts/unify_live_full_r2_watch_qwen14.py) | Watchdog for the larger model split across GPUs |
+| [`code/scripts/unify_live_full_r2_integrity.py`](code/scripts/unify_live_full_r2_integrity.py) | Integrity check on collected data |
+| [`code/scripts/unify_live_full_r2_make_reports.py`](code/scripts/unify_live_full_r2_make_reports.py) | Builds the final reports, tables, figures |
+| [`code/scripts/last_pack_collect_format.py`](code/scripts/last_pack_collect_format.py) | Case collection for the output-format domain |
+| [`code/scripts/cass_r4_collect.py`](code/scripts/cass_r4_collect.py) | Case collection for the math domain |
+| [`code/src/dart_research/`](code/src/dart_research/) | Per-domain runner modules (math / format) |
+
+### Folder map
+
+```
+.
+├── code/                       experiment code (collect / run / aggregate / unify)
+├── configs/                    model and data configs
+├── prompts/                    prompt assets
+├── tests/                      regression tests
+├── reports/frozen_context/     pre-unification context reports
+├── reports/final/              final unified reports
+├── tables/                     writeup tables (CSV)
+├── figures/                    writeup figures (PNG)
+├── results_compact/            per-model summary results
+├── manifests/                  run manifests
+├── logs/                       research / decision logs
+├── REPORT_PROJECT_SUMMARY_KO.md
+└── REPORT_PROJECT_SUMMARY_EN.md
+```
+
+### Environment
+
+```bash
+python3 -m venv --system-site-packages .venv
+source .venv/bin/activate
+pip install -U -e .
+export HF_TOKEN=...   # only if needed
+```
+
+### Status
+
+🧊 **Dormant** — the cross-domain unifying conclusion is in place; paused at that point.
+
+### License
+
+Released under [CC BY-NC 4.0](./LICENSE).
