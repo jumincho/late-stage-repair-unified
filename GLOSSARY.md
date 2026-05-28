@@ -43,18 +43,16 @@ suggest. See `REPORT_PROJECT_SUMMARY_EN.md` section 6 for the numbers.
 
 ## `DART_REPO_ROOT`
 
-The original execution environment used `/workspace/project` as an absolute
-path. To keep the closure reports honest, those absolute paths are
-preserved everywhere they appear. To make the repo runnable on any
-checkout, every script and every module that reads or writes outside of
-the source tree reads the override from the `DART_REPO_ROOT` env var:
+Every script and every module that reads or writes outside of the source
+tree resolves its repo-root path from the `DART_REPO_ROOT` env var:
 
 ```bash
 export DART_REPO_ROOT="$(pwd)"   # or any absolute path
 ```
 
-The default is still `/workspace/project`, so closure reports' absolute
-paths continue to resolve as written.
+The default is `/workspace/project`, which is the path the original
+execution environment used; setting `DART_REPO_ROOT` redirects everything
+to a fresh checkout.
 
 ## `dart_research/` package layout
 
@@ -112,20 +110,3 @@ of those manifests live for portability.
 |---|---|
 | `logs/research_log.md` | Day-by-day notes — what was tried, what was observed, where each round left off. The narrative of the work. |
 | `logs/decision_log.md` | The point-decisions only — "decided to drop the universal-rule claim", "switched 14B to 8-way shard", "froze the action mapping at three actions". The "what we committed to" stream. |
-
-## Why the absolute path defaults survive in code
-
-Two reasons.
-
-First, the closure reports cite raw response paths under
-`/workspace/project/...`. Renaming them in code would silently break those
-citations.
-
-Second, `DART_REPO_ROOT` covers the override case — every default that
-looks like `/workspace/project/...` actually reads
-`os.environ.get("DART_REPO_ROOT", "/workspace/project")` first. So a fresh
-checkout sets one environment variable and every path resolves.
-
-The argument-parser defaults that name `DART_REPO_ROOT` directly are the
-bridge — they materialize the env-var-overridable default into a concrete
-path at run time.
