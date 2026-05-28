@@ -83,7 +83,7 @@ the prompt bank wraps the `.txt` prompts under `prompts/<module>/`.
 
 | Folder | What's in it |
 |---|---|
-| `reports/frozen_context/` | The pre-unification context, per domain. The math side's `cass_r4_main_report.md` and friends, the format side's planning reports, and the earlier `lace_full_synthesis.md` / `unify_full_synthesis.md`. These are *frozen* — they record where each domain stood before they were merged into one story. |
+| `reports/frozen_context/` | The pre-unification context, per domain. The math side's `cass_r3_main_report.md` and friends, the format side's planning reports, and the earlier `lace_full_synthesis.md` / `unify_full_synthesis.md`. These are *frozen* — they record where each domain stood before they were merged into one story. |
 | `reports/final/` | The unified cross-domain reports produced by `unify_live_full_r2_make_reports.py`: per-model reports (`unify_live_full_r2_*_report.md`), the synthesis memo, the qwen14b collection report, and the one-page summary memo. |
 
 ## `tables/` and `figures/`
