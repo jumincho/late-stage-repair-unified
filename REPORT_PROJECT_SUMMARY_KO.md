@@ -183,7 +183,7 @@ fresh prospective `Qwen-7B`, `Mistral-7B`, 그리고 완성된 `Qwen-14B` scale 
 
 최종 단계 이전의 frozen context를 보려면:
 
-- `reports/frozen_context/cass_r4_main_report.md`
+- `reports/frozen_context/cass_r3_main_report.md`
 - `reports/frozen_context/cass_fi_portable_core_report.md`
 - `reports/frozen_context/lace_full_synthesis.md`
 - `reports/frozen_context/unify_full_synthesis.md`
