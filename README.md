@@ -89,6 +89,7 @@
 ├── results_compact/            모델별 요약 결과
 ├── manifests/                  실행 매니페스트
 ├── logs/                       연구일지 / 의사결정 기록
+├── GLOSSARY.md                 내부 용어 사전
 ├── REPORT_PROJECT_SUMMARY_KO.md
 └── REPORT_PROJECT_SUMMARY_EN.md
 ```
@@ -195,6 +196,7 @@ The conclusion stands clearly and the cross-domain narrative is in place. What d
 ├── results_compact/            per-model summary results
 ├── manifests/                  run manifests
 ├── logs/                       research / decision logs
+├── GLOSSARY.md                 internal-terminology dictionary
 ├── REPORT_PROJECT_SUMMARY_KO.md
 └── REPORT_PROJECT_SUMMARY_EN.md
 ```
