@@ -1,3 +1,23 @@
+"""Step 3 of the unified live full r2 pipeline: build the final reports.
+
+Once the per-model live runs have finished and `unify_live_full_r2_integrity`
+has been re-run cleanly, this script does the final synthesis. For each of
+the three required models it:
+
+- re-audits the bank (so the report references match the latest state),
+- builds the unified `(math, format)` evaluation frames,
+- fits pooled vs domain-specific simple policies,
+- writes the per-model markdown reports under `reports/final/`,
+- writes the cross-domain synthesis memo,
+- writes summary tables (CSV in `tables/unify_live_full_r2/`) and figures
+  (PNG in `figures/unify_live_full_r2/`) used by the writeup.
+
+`qwen14b` is handled separately because its restart timeline is recorded in a
+dedicated collection report; pass that JSON via `--qwen14-attempts-json` if
+you want the timeline of GPU sharding attempts included in the report. All
+path defaults route through `DART_REPO_ROOT`.
+"""
+
 from __future__ import annotations
 import os
 

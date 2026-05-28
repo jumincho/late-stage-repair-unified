@@ -1,3 +1,14 @@
+"""`ProcessRewardModelScorer` — local PRM scoring with on-disk cache.
+
+Wraps a HuggingFace process-reward-model checkpoint (default
+`Qwen/Qwen2.5-Math-PRM-7B`) so stage reasoning can be scored offline. Loads
+the PRM lazily (the `transformers` import is guarded so missing the
+dependency does not block the rest of the package), tokenises stage text
+into the expected step-level format, and caches scores on disk by content
+hash with a `CACHE_VERSION = "vchase_prm_v1"` namespace bump. CASS_R4 and
+the EIR runners both accept a `prm_scorer` to use this.
+"""
+
 from __future__ import annotations
 
 import os

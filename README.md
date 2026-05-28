@@ -10,7 +10,7 @@
 ![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)
 ![Closure](https://img.shields.io/badge/closure-2026--03-blue)
 
-**한국어** · [English](#english)
+**한국어** · [English](#english) · [中文](./README.zh-CN.md)
 
 </div>
 
@@ -55,6 +55,7 @@
 
 ## 다시 들여다볼 때는 어디부터
 
+- 📖 [`GLOSSARY.md`](GLOSSARY.md) — 코드와 종료 보고서에 흘러 들어간 내부 용어(`cass_r4`, `last_pack`, `unify_live_full_r2`, `DART_REPO_ROOT`, 세 가지 액션 이름 등)를 일반어로 정리한 사전
 - 🇰🇷 [`REPORT_PROJECT_SUMMARY_KO.md`](REPORT_PROJECT_SUMMARY_KO.md) — 한 편 분량의 최종 보고서. 가장 먼저 읽으면 좋은 글
 - [`reports/final/`](reports/final/) — 도메인별 최종 보고서와 두 도메인을 묶은 통합 보고서
 - [`reports/frozen_context/`](reports/frozen_context/) — 그 전 단계까지의 맥락(수학 쪽, 포맷 쪽)
@@ -160,6 +161,7 @@ The conclusion stands clearly and the cross-domain narrative is in place. What d
 
 ### Where to look first when revisiting
 
+- 📖 [`GLOSSARY.md`](GLOSSARY.md) — Decoder ring for the internal vocabulary that leaked into source and closure reports (`cass_r4`, `last_pack`, `unify_live_full_r2`, `DART_REPO_ROOT`, the three action names, and the `frozen_context/` vs `final/` split).
 - 🇬🇧 [`REPORT_PROJECT_SUMMARY_EN.md`](REPORT_PROJECT_SUMMARY_EN.md) — single-essay final report.
 - [`reports/final/`](reports/final/) — per-domain and unified final reports.
 - [`reports/frozen_context/`](reports/frozen_context/) — pre-unification context (math side, format side).

@@ -1,3 +1,12 @@
+"""Prompt bank for the same-context chase / confidence traces.
+
+Loads the eight `.txt` prompt files under `prompts/confidence/` (draft,
+verbalized-confidence-20, verbalized-confidence-100, challenge,
+revise-same, self-refine critique, self-refine revise, alternatives) into a
+versioned dataclass for `ChaseTraceRunner`. Each prompt carries its own
+`v1` version header so the trace records can pin exact prompt versions.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

@@ -1,3 +1,18 @@
+"""Shared evaluation metrics and summarization helpers.
+
+Provides the small public surface used everywhere a paired comparison
+shows up:
+
+- `is_correct`, `majority_vote`, `summarize_results`, `dataset_display_name`,
+- `paired_bootstrap_accuracy_delta` — paired bootstrap CI on the per-example
+  accuracy delta between two methods,
+- `mcnemar_exact` — exact McNemar test on paired binary outcomes.
+
+These are the building blocks both `confidence.analysis` and
+`unify_live_full_r2` use when they report "policy A vs policy B" with a
+proper confidence interval.
+"""
+
 from __future__ import annotations
 
 import math

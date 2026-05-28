@@ -1,3 +1,22 @@
+"""LACE unified frame builder — turn raw math / format records into one shape.
+
+This is the unification half of `lace`. It does the heavy work that lets
+`unify_live_full_r2` treat math and format as two instances of the same
+three-action problem:
+
+- `UNIFIED_CONFIG` — the `(direct, local, global)` success/latency column
+  names every domain must produce,
+- `build_math_unified_frame` — convert math CASS_R4 records into that shape,
+- `build_format_unified_frame` — convert last-pack format records into it,
+- `fit_shared_simple_policies` / `select_best_simple_policy` —
+  fit a single pooled policy and pick the simplest one that ties the best,
+- `stable_split_triplet` — deterministic (train, cal, test) for a seed,
+- `grouped_policy_rows` / `decision_success` — paired-bootstrap reporting.
+
+Pooled feature columns (`POOLED_FEATURE_COLUMNS`) are the small set
+of features used in the shared cross-domain policy.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

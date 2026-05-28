@@ -1,3 +1,22 @@
+"""Watchdog for the long-running Qwen 2.5-14B-Instruct unify_live_full r2 run.
+
+The 14B model is large enough that it must be sharded across 8 GPUs with two
+worker slots per device. That run takes long enough — and stalled often
+enough during the original collection — that a separate watcher script is
+useful. This module reads the per-phase shard directories under
+`--run-root`, queries `nvidia-smi` for live GPU utilization, and prints a
+one-screen summary:
+
+- which phase the run is currently in and how close it is to its expected
+  row count (from `PHASE_SPECS`),
+- how many GPUs are above `--gpu-util-threshold` (default 80%),
+- per-GPU memory / utilization / power.
+
+With `--output-json` it also writes a machine-readable snapshot so an outer
+log scraper can graph progress over time. The default run root is the path
+of the qwen14b second-attempt directory referenced in the closure reports.
+"""
+
 from __future__ import annotations
 import os
 

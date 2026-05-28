@@ -1,3 +1,19 @@
+"""In-house `planning_bridge` task generator and validator.
+
+The `planning_bridge` surface is the project's own format-domain task: a
+small grid-navigation puzzle that requires the model to emit both a valid
+plan (a sequence of `U`/`D`/`L`/`R` moves) and a formatted answer that
+reflects the plan's outcome. This module:
+
+- defines `PlanningTask` and the `MOVE_DELTAS` constants,
+- generates / loads tasks (`load_task_from_dict`, etc.),
+- validates a plan (`validate_plan`) and the wrapping format separately.
+
+The "bridge" name comes from the fact that the surface bridges a planning
+sub-task and a format constraint, so the local-repair operator can fix one
+without disturbing the other.
+"""
+
 from __future__ import annotations
 
 from collections import deque

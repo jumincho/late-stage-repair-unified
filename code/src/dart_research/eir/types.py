@@ -1,3 +1,18 @@
+"""Typed record shapes for the EIR / HEIR / OSCAR / ATLAS / CASS pipeline.
+
+These dataclasses are the on-disk shape every math-side runner serialises
+into `per_example.jsonl`:
+
+- `DraftRecord` — the initial answer + scratch + correctness label.
+- `ProbeRecord` — one probe's parsed fields, with optional raw text.
+- `ActionOutcome` and `BaselineOutcome` — what one action produced and how
+  it compares to the baseline.
+- `ActionBankRecord` — the whole per-example record bundling draft +
+  probes + actions + prompt bundle versions.
+
+Used by every math runner from `eir` all the way to `cass_r4`.
+"""
+
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field

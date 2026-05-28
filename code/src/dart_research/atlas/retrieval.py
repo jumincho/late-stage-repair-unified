@@ -1,3 +1,13 @@
+"""Teacher-exemplar retrieval for the ATLAS math runner.
+
+The ATLAS round of the math experiments leans on cluster-conditional
+retrieval: given a draft schema for a fresh problem, it pulls the most
+similar teacher-audited schema exemplars and feeds them back into the
+fieldwise repair prompts. This module loads the teacher seed JSONL, tokenises
+the questions, and returns top-K matches grouped by semantic cluster. The
+math-domain runner module in `atlas.runner` is the only consumer.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

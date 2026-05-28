@@ -1,3 +1,12 @@
+"""Prompt bank for the ATLAS-RG (role-grounded) math runner.
+
+The role-grounded variant of ATLAS adds an explicit "role table" probe (a
+small typed table of named quantities and their roles in the problem)
+before the rest of the schema is composed. This module wraps the seven
+`.txt` prompt files under `prompts/atlas_rg/` into a versioned dataclass
+that `atlas_rg.runner` loads once per process.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

@@ -1,3 +1,17 @@
+"""Lightweight XML-like tag parser for free-form prompt outputs.
+
+The per-domain runners often ask the model to emit answers wrapped in
+simple tags such as `<answer>...</answer>` or `<content>...</content>`
+instead of full JSON. This module is a single regex (`TAG_PATTERN`) plus a
+couple of helpers:
+
+- `extract_tagged_fields` — every tag in the output, deduplicated.
+- `require_tags` — same but raises if a required tag is missing.
+- `parse_int_tag` — pull an integer out of a tag value.
+
+Used by every confidence / EIR / OSCAR / ATLAS / CASS / last_pack runner.
+"""
+
 from __future__ import annotations
 
 import re

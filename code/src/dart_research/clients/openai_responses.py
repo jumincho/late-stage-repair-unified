@@ -1,3 +1,13 @@
+"""OpenAI Responses API client.
+
+Optional API-hosted backend used during early teacher-seed collection (the
+teacher patches the CASS retrieval round consumes). Wraps the official
+`openai` SDK's Responses API with retry-on-transient-error, a content-hash
+disk cache, and the unified `GenerationEnvelope` return type. Pricing is
+read from `configs/models.yaml` so per-call cost is recorded alongside the
+tokens. Not used in the final live full r2 run, which is local-only.
+"""
+
 from __future__ import annotations
 
 import os

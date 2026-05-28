@@ -1,3 +1,13 @@
+"""Common model client envelope and base interface.
+
+Every backend client in the `clients/` package (HuggingFace transformers,
+vLLM, OpenAI Responses, mock) returns a `GenerationEnvelope` so the rest of
+the codebase can ignore where the answer came from. `GenerationMetrics`
+collects latency, token usage, cost, and the on-disk path of the cached raw
+response — that path is what the closure reports cite when they say
+"raw at ...". `ModelClient` is the abstract surface the backends implement.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

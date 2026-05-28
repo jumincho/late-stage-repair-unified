@@ -1,3 +1,14 @@
+"""Benchmark loaders — the one place that knows how to read each dataset.
+
+Provides `BenchmarkExample` (the package-wide dataclass for a single
+benchmark item) and `load_examples`, which reads the dataset spec from
+`configs/datasets.yaml`, pulls the corresponding HuggingFace dataset (GSM8K,
+StrategyQA, ARC-Challenge, etc.) into normalized form, and yields
+`BenchmarkExample` instances. Multiple-choice options are formatted into a
+consistent shape so downstream methods do not have to special-case ARC vs
+others.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass, field

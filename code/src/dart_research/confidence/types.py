@@ -1,3 +1,17 @@
+"""Typed record shapes for confidence / chase traces.
+
+Three dataclasses make up the per-example record:
+
+- `SignalSnapshot` — one stage's measured signals (verbal conf, self-eval,
+  answer log-prob, disagreement fraction, dinco gap, critique severity,
+  ...). Every field is optional because not every stage produces every
+  signal.
+- `StageTrace` — the model's text + parsed fields at one stage plus its
+  `SignalSnapshot`.
+- `SelfRefineResult` and `TraceRecord` — wrappers that the runner
+  serialises into the `per_example.jsonl` record for downstream analysis.
+"""
+
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field

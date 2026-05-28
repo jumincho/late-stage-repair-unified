@@ -1,3 +1,19 @@
+"""Prompt bank for the CASS patch heads (math domain).
+
+CASS — "Cluster-And-Schema-Steered" — is the first math round that introduces
+*localized* patch operators on top of ATLAS-RG. This module loads the six
+patch prompts under `prompts/cass/`:
+
+- `teacher_patch` — initial teacher-style patch generator,
+- `target_postprocess_patch` — patches only the target / postprocess flags,
+- `role_patch` — patches the role table,
+- `combined_patch` — patches both,
+- `critical_role_patch` — repairs only the critical-role subset,
+- `nonrole_patch` — repairs only the non-role schema.
+
+Consumed by `cass.runner.CASSPatchBankRunner`.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

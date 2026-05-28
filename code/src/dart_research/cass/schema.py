@@ -1,3 +1,19 @@
+"""CASS patch-field schema helpers and signatures (math domain).
+
+Defines the field-subset constants the CASS patch heads operate on
+(`TARGET_POSTPROCESS_FIELDS`, role / nonrole splits, etc.) and the actual
+field-level patch composition functions used by the runner:
+
+- `apply_teacher_patch_fields` — apply a teacher patch on top of a base schema,
+- `repair_target_postprocess_patch` / `repair_role_patch` / `repair_nonrole_patch`
+  / `repair_critical_role_patch` / `repair_target_postprocess_plus_role_patch`,
+- `target_postprocess_suspicion` / `role_suspicion` — cheap heuristics that
+  decide whether to bother trying each patch head on a given problem.
+
+Most function bodies thinly wrap helpers re-exported from `atlas_ms.schema`
+and `atlas_rg.schema`.
+"""
+
 from __future__ import annotations
 
 import re

@@ -1,3 +1,15 @@
+"""Math-side analysis helpers that feed the unified `lace` frame.
+
+Where `lace.unify.build_math_unified_frame` does the structural conversion,
+this module supplies the per-record annotation logic. `tag_math_failure_stage`
+labels a math record with the stage where it actually went wrong (operator
+choice, role assignment, target postprocess, etc.) so the unified frame's
+`shared_failure_bucket` and `final_stage_suspicion` features can be set.
+
+The default `MATH_SURFACE_GLOBS` resolve `DART_REPO_ROOT` so the closure
+reports can keep their absolute paths while still being relocatable.
+"""
+
 from __future__ import annotations
 import os
 

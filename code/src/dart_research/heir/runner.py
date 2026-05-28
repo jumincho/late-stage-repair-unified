@@ -1,3 +1,12 @@
+"""`HEIRActionBankRunner` — pruned EIR bank with an explicit KEEP probe.
+
+Subclasses `EIRActionBankRunner` and adds an explicit `KEEP` probe at the
+front of the action bank, then prunes the more expensive EIR actions. The
+goal of this round was to test whether a `KEEP_OR_REPAIR` two-step gate
+recovers most of the gain at a fraction of the cost. The downstream
+`OSCARInterfaceBankRunner` subclasses this runner.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

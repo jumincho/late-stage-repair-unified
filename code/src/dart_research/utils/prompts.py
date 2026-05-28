@@ -1,3 +1,13 @@
+"""Per-file prompt loader and `{placeholder}` template renderer.
+
+Every prompt asset in `prompts/` starts with a `VERSION:` header (followed
+by the version string) and then the actual prompt body. `load_prompt`
+parses the header and returns a `PromptTemplate(name, version, text)`.
+`PromptTemplate.render(**kwargs)` does literal `{key}` substitution on the
+body. The per-domain prompt banks (`CASSPromptBank`, `OSCARPromptBank`,
+etc.) are wrappers around several of these.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

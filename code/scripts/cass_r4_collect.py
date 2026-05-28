@@ -1,3 +1,22 @@
+"""CLI entry point for `cass_r4` math-domain case collection.
+
+This is the math-side collector for round 4 of the CASS (Cluster-And-Schema-
+Steered) patch-bank experiments. It walks a math benchmark (typically a
+GSM8K-derived cluster-hard or generic-hard slice), runs the configured local
+model client over each problem, and asks the `CASSR4Runner` to record:
+
+- the draft answer (no intervention),
+- the operator / schema probe results,
+- one record per CASS_R4 method (local patches, teacher patches, raw Python),
+- optional process-reward-model (PRM) scores for stage reasoning.
+
+Inputs are either a `--dataset` from `configs/datasets.yaml` or an explicit
+`--manifest` JSON listing question IDs. Outputs land in `--output-dir` as
+`per_example.jsonl` plus a `manifest.json` describing the run. The `cass_r4`
+prefix marks this as the "round 4" math collection that produced the frozen
+pre-unification math reports under `reports/frozen_context/`.
+"""
+
 from __future__ import annotations
 
 import argparse

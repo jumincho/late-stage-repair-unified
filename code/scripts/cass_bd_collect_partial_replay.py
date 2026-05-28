@@ -1,3 +1,19 @@
+"""CLI entry point for the `cass_bd` boundary diagnosis partial replay.
+
+This script does *not* run a fresh model pass. It takes already-collected math
+records from one or more `--input-dirs`, re-runs the partial-probe / partial-
+repair diagnosis methods listed in `DIAGNOSIS_METHODS`, and appends the new
+probe and action rows back into a fresh `per_example.jsonl` under
+`--output-dir`. The `cass_bd` prefix identifies these records as the
+"boundary diagnosis" extension to the earlier CASS round, used to test whether
+a small set of localized patches recovers the draft on cases where the full
+CASS bank already labeled the draft wrong.
+
+The default `--teacher-seed` path is resolved against `DART_REPO_ROOT` so the
+original closure-report references survive even when the repo is checked out
+somewhere other than `/workspace/project`.
+"""
+
 from __future__ import annotations
 import os
 

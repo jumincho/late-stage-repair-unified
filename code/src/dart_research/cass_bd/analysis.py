@@ -1,3 +1,20 @@
+"""Partial-repair diagnosis helpers for `cass_bd` (math boundary domain).
+
+Where CASS proper applies whole patch operators, `cass_bd` applies *partial*
+ones: only target-only fields, only postprocess flags, only discretization
+flags, etc. The point is to see how thin a patch slice still suffices to
+recover the draft on a boundary case.
+
+Provides:
+
+- `DIAGNOSIS_METHODS` — the named partial-probe variants,
+- `FAMILY_CORE_METHODS` — the parent CASS methods these compare against,
+- `build_partial_probe` / `partial_repair_fields` — assemble a partial probe,
+- `baseline_right_patch_wrong_rows` — find rows where the partial bundle
+  matches the teacher's patched schema even though the draft was wrong,
+- `cross_family_failure_table` / `summarize_failure_categories` — reporting.
+"""
+
 from __future__ import annotations
 
 import json

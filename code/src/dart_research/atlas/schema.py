@@ -1,3 +1,13 @@
+"""Schema defaults and fieldwise composition helpers for ATLAS math.
+
+Holds the canonical default values for the math problem schema (target
+variable, final target type, operator family, discretization/postprocess
+flags, etc.) and the helper that composes the fieldwise probe outputs back
+into a single dict the downstream OSCAR compiler can consume. The repair
+helpers in this module are also re-used by `atlas_rg.schema` and
+`cass.schema` via direct re-imports.
+"""
+
 from __future__ import annotations
 
 from typing import Any

@@ -1,3 +1,25 @@
+"""CLI entry point for the `last_pack` output-format domain collector.
+
+This is the format-side counterpart to `cass_r4_collect.py`. For each item in
+an instruction-following surface (`ifeval`, `ifbench`, or the in-house
+`planning_bridge` task), it runs the local model under four method variants
+and records the result of each so the downstream policy fitter can compare
+them:
+
+- `direct_formatted` — answer as-is, no intervention.
+- `full_rewrite_on_failure` — global rewrite when the validator says fail.
+- `solve_then_format` — generate the content tag first, then re-render under
+  the format constraints (a structured local repair).
+- `format_only_patch` — try a deterministic patch first; fall back to an
+  LLM-emitted format-only patch if that doesn't validate.
+
+Each method's evaluation (`strict_follow_all` for IFEval / IFBench, the
+in-house `_bridge_eval` for `planning_bridge`) is attached, and a row per
+example is written to `per_example.jsonl`. This is the "last pack" — the last
+round of format-domain data before the unified `unify_live_full_r2`
+evaluation.
+"""
+
 from __future__ import annotations
 import os
 

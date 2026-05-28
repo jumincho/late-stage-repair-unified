@@ -1,3 +1,12 @@
+"""Mock model client used by the smoke / regression tests.
+
+Implements the `ModelClient` interface but never talks to a model. Returns
+deterministic canned `pydantic` payloads for each structured response type
+defined in `parsing.schemas` (drafts, candidate sets, rebuttals, validation
+sets, etc.) and records fake metrics. The smoke run in `run_experiment.main`
+defaults to this client so tests stay offline.
+"""
+
 from __future__ import annotations
 
 import time

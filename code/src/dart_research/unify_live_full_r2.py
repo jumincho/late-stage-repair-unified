@@ -1,3 +1,30 @@
+"""`unify_live_full_r2` — the final cross-domain unification module.
+
+This is the entry point for the final round of the project. The `r2`
+suffix means "round 2 of the unification effort"; `unify_live_full` means
+"unified frame, live (prospective) collection, full surface coverage". It
+ties together the math (`cass_r4`) and format (`last_pack`) live banks,
+re-frames both through the three-action `ABSTRACT_ACTION_SPACE` —
+`NO_INTERVENTION`, `LOCAL_REPAIR`, `GLOBAL_REWRITE_OR_RESTART` — and
+produces the closure-report artifacts.
+
+The module surface consists of three roles:
+
+- pipeline data (`MODEL_SPECS`, `PHASE_SPECS`, `EXPECTED_SURFACE_COUNTS`,
+  `ACTION_MAPPING`, `R2_SPLIT_SEEDS`) consumed by the scripts in
+  `code/scripts/unify_live_full_r2_*`,
+- top-level entry points (`prepare_feature_bundle`, `audit_bank`,
+  `evaluate_model_bank`, `write_bundle_outputs`) that the three scripts
+  drive in order,
+- report writers (`write_integrity_report`, `write_model_report`,
+  `write_synthesis_report`, `write_summary_memo`, ...) that emit the
+  markdown / CSV / PNG artifacts under `reports/final/`, `tables/`, and
+  `figures/`.
+
+All path defaults flow through `DART_REPO_ROOT` so the closure reports'
+absolute references continue to resolve on any checkout.
+"""
+
 from __future__ import annotations
 import os
 
