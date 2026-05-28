@@ -1,3 +1,12 @@
+"""Small shared filesystem helpers used by every collection script.
+
+The single place where parent-directory creation, JSON / JSONL read and
+append, and UTF-8 text I/O live. `ensure_dir` creates the parent
+directory and returns the path so callers can chain it; `append_jsonl` is
+the per-example writer used by every collector to stream rows to
+`per_example.jsonl`. Built on `orjson` where it matters for speed.
+"""
+
 from __future__ import annotations
 
 import json

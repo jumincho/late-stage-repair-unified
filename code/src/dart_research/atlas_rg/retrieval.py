@@ -1,3 +1,12 @@
+"""Role-grounded teacher-exemplar retrieval for the ATLAS-RG math runner.
+
+Same shape as `atlas.retrieval`, but the exemplar records carry an extra
+`role_signature` field. Retrieval prefers exemplars that share both the
+semantic cluster *and* the role signature, so the role-grounded patch heads
+have role-consistent demonstrations to imitate. Used only by
+`atlas_rg.runner`.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

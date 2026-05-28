@@ -1,3 +1,17 @@
+"""Generic method pipelines used by the `run_experiment` smoke / regression flow.
+
+Where the per-domain runners (CASS, last_pack, etc.) collect their named
+action banks, this module is the generic method-vs-method comparison
+surface that ran in the earlier rounds and now backs the `run_experiment.py`
+smoke entry point. Each method (`direct_cot`, `self_consistency_5`,
+`self_refine_1`, `mc_select_only`, `dart_self`, `dart_adv`,
+`dart_human_options`) is one `MethodRunner.run_method` call that returns a
+`MethodResult` with the prediction, normalized prediction, candidate
+coverage, malformed counts, latencies, tokens, costs, and per-stage records.
+
+`PromptBank` here is the generic counterpart to the per-domain prompt banks.
+"""
+
 from __future__ import annotations
 
 import json

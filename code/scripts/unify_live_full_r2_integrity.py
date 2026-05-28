@@ -1,3 +1,22 @@
+"""Step 2 of the unified live full r2 pipeline: audit each model bank.
+
+After the per-model live runs have produced their shard directories under
+`results/unify_live_full_{qwen,mistral,qwen14b}/`, this script walks the
+sharded outputs for the three required models (Qwen 2.5-7B-Instruct,
+Mistral-7B-Instruct-v0.3, Qwen 2.5-14B-Instruct), checks that every shard
+finished and the expected per-surface row counts are present, and writes:
+
+- `integrity_surface_summary.csv` — per-surface rowcount audit.
+- `integrity_shard_summary.csv` — per-shard timing + completion audit.
+- `integrity_issues.csv` — only when problems exist; deleted otherwise.
+- `integrity_audit.json` — small JSON header recording the `paper_safe`
+  flag and any restart-log notes attached to the run.
+
+Run roots and output roots all default through `DART_REPO_ROOT` so the
+absolute paths recorded in the closure reports continue to resolve when the
+repo is checked out somewhere other than `/workspace/project`.
+"""
+
 from __future__ import annotations
 import os
 

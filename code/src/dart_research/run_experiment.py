@@ -1,3 +1,19 @@
+"""Generic experiment harness used by the smoke / regression tests.
+
+This is *not* the entry point for the final unify_live_full r2 pipeline —
+the collectors under `code/scripts/` are. This module is the older generic
+harness that runs the methods in `methods/pipelines.py` (`direct_cot`,
+`self_consistency_5`, `self_refine_1`, `mc_select_only`, `dart_self`,
+`dart_adv`, `dart_human_options`) over the datasets listed in
+`configs/datasets.yaml` and writes a per-example JSONL plus the rolled-up
+tables.
+
+`build_client` is the only function the per-domain collectors import from
+this module — it is how every script in `code/scripts/` chooses between
+`mock`, `openai`, `hf_local`, and `vllm` backends. The rest of the module
+backs `main()` for `python -m dart_research.run_experiment`.
+"""
+
 from __future__ import annotations
 
 import argparse

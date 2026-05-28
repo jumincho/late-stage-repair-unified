@@ -1,3 +1,13 @@
+"""Content-addressed disk cache for model responses.
+
+Every client (HF local, vLLM, OpenAI, mock) routes its raw response through
+`DiskCache`, which hashes the request payload (`orjson` with sorted keys)
+and stores the response JSON at `<root>/<sha256>.json`. Subsequent identical
+requests skip the model entirely. The on-disk path is what the closure
+reports cite as the raw-response cite — that is why moving cache roots
+between runs requires `DART_REPO_ROOT` to stay overrideable.
+"""
+
 from __future__ import annotations
 
 import hashlib

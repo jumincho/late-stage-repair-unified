@@ -1,3 +1,14 @@
+"""Local vLLM client (optional, import-guarded).
+
+Alternative to `hf_local` for runs where vLLM's tensor-parallel sharding is a
+better fit (the 14B run originally tried this path before settling on a
+hand-rolled 8-way HF shard). The vLLM import is guarded so missing the
+dependency does not block the rest of the package from being usable.
+
+`_render_messages` is re-used from `hf_local` so the chat template applied
+here matches what the HF path produces on the same model.
+"""
+
 from __future__ import annotations
 
 import os

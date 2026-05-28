@@ -1,3 +1,13 @@
+"""Prompt bank for the ATLAS fieldwise schema-to-code math runner.
+
+ATLAS is one of the middle rounds of the math-domain patch-bank effort. It
+breaks the math schema into independently-probed fields (semantics, then
+quantities) and then critically repairs the ones a teacher example suggests
+are wrong. This module just wraps the five `.txt` prompt files under
+`prompts/atlas/` into a versioned `ATLASPromptBank` dataclass that the
+runner can load once and pass around.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

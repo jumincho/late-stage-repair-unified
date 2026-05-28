@@ -1,3 +1,21 @@
+"""LACE three-action policy fitter (cross-domain late-stage-repair core).
+
+This is the policy half of `lace` — the cross-domain unification module
+named after the project. It defines the three-action policy abstraction
+that the math and format domains both collapse onto:
+
+- `NO_INTERVENTION` — do nothing,
+- `LOCAL_REPAIR` — patch only the last-step mistake,
+- `GLOBAL_REWRITE_OR_RESTART` — start over.
+
+`ActionPolicyConfig` names the success / latency columns for each action,
+`PolicyMetrics` is the row we emit per policy, `fit_three_action_policy`
+fits a small logistic gate on the per-example features, and
+`evaluate_policy` scores a fitted policy on a held-out frame. The
+`stable_hash_bucket` helper is what gives every example a deterministic
+train / cal / test bucket across runs.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

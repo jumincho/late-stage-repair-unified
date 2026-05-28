@@ -1,3 +1,13 @@
+"""Teacher-patch retrieval for the CASS math runner.
+
+Where `atlas.retrieval` retrieves whole teacher schemas, CASS retrieves
+teacher *patch deltas* — the (base_schema, patch_fields, patched_schema)
+triples a previous teacher pass produced. The signatures used for matching
+(`role_signature`, `target_postprocess_signature`, `nonrole_signature`) are
+imported from `cass.schema`. The math runner uses this to ground its
+localized patches in actually-observed teacher repairs.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

@@ -1,3 +1,13 @@
+"""CASS round-2 (`cass_r2`) runner: adds the F1-Lite and Prism-Lite heads.
+
+Subclasses `CASSPatchBankRunner` and inserts two extra rows into each
+`ActionBankRecord` — `F1_LITE` (lightweight first-pass schema rebuild) and
+`PRISM_LITE` (multi-view consistency check). The output order is fixed by
+`CASSR2_METHOD_ORDER`. This runner is what `cass_bd_collect_partial_replay`
+re-uses when it lifts already-collected examples and stamps in the partial-
+diagnosis methods.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

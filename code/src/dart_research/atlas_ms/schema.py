@@ -1,3 +1,14 @@
+"""Multi-signature schema helpers for the ATLAS-MS math probe variant.
+
+`atlas_ms` is the multi-signature flavour of ATLAS. Instead of recovering
+just one schema fingerprint per problem, it builds three independent
+signatures (operator bundle, role bundle, target bundle) and matches against
+all of them. The constants and helpers here power that match logic — they
+are also re-used by `cass.schema` for its target-postprocess / role
+combined-patch signatures. This module has no `runner.py` of its own; the
+schema utilities are imported into the CASS runners.
+"""
+
 from __future__ import annotations
 
 import re

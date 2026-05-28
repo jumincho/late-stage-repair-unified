@@ -1,3 +1,15 @@
+"""Prompt bank for OSCAR (schema probe + constrained compile, math domain).
+
+Loads the two `.txt` prompts under `prompts/oscar/`:
+
+- `schema_probe` — ask the model to emit a structured operator schema,
+- `constrained_compile` — re-ask the model with explicit allowed-op
+  constraints so it tightens up the schema before compilation.
+
+The version bundle is merged with the TIER prompt versions because OSCAR
+sits between TIER (probe-level) and the higher rounds (ATLAS / CASS).
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

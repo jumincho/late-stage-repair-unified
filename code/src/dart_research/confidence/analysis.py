@@ -1,3 +1,15 @@
+"""Analysis helpers for the same-context chase / confidence traces.
+
+The `confidence` module was an earlier round that collected per-stage
+confidence signals (verbalized confidence, self-eval probability, answer
+log-prob, disagreement fraction, dinco gap, critique severity, ...) for each
+trace. This file holds the helpers that flatten the traces into a row-per-
+stage frame, fit small calibrators, and report selective-classification
+metrics (AUROC, AURC, ECE, Brier, paired-bootstrap deltas) on top of them.
+The features it surfaces are also re-used as inputs to later vchase /
+unify_live_full_r2 stages.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

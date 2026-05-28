@@ -1,3 +1,15 @@
+"""HuggingFace `transformers` local client (`hf_local`).
+
+The primary client used in the live full r2 collection runs. Loads a HF
+causal-LM checkpoint with optional `bitsandbytes` quantization (4-bit /
+8-bit), routes generation through a tokenizer-aware chat template, caches
+the raw model output on disk by content hash, and exposes the unified
+`generate_text` / `generate_structured` (pydantic-validated) surface. The
+backend overrides (`dtype`, `device_map`, `max_model_len`, `quantization`,
+`trust_remote_code`, etc.) come from the CLI flags on the collection
+scripts.
+"""
+
 from __future__ import annotations
 
 import os

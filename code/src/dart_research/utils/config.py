@@ -1,3 +1,12 @@
+"""YAML config loader with `${VAR}` / `${VAR:-default}` env expansion.
+
+The configs under `configs/` (datasets, methods, models) use shell-style
+environment variable expansion so paths can route through `DART_REPO_ROOT`
+without code changes. `load_yaml` reads a YAML file, then walks it
+recursively and expands every `${VAR}` and `${VAR:-default}` token against
+the live environment, leaving the rest of the value untouched.
+"""
+
 from __future__ import annotations
 
 import os

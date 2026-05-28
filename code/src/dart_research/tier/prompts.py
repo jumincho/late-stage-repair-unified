@@ -1,3 +1,13 @@
+"""Prompt bank for the TIER probe layer (math domain).
+
+TIER is the probe layer that sits between EIR / HEIR (free-form repairs)
+and OSCAR (compiled schemas). It asks four typed probes about the draft —
+quantities, operators, equations, normalized values — and a matching action
+for each. This module wraps the eight `.txt` files under `prompts/tier/`
+into a versioned dataclass. The `OSCARPromptBank` merges TIER's version
+bundle into its own so the schema-compile rounds pin the probe versions.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

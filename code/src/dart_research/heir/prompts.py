@@ -1,3 +1,12 @@
+"""Prompt bank for HEIR — the pruned EIR action bank.
+
+HEIR ("Headlined EIR") adds one prompt on top of the EIR bank: an explicit
+`keep_probe` that asks the model to consider keeping the draft before
+running any repair action. The rest of the prompt bank is re-used directly
+from `EIRPromptBank`. `version_bundle` merges the EIR bundle and stamps the
+extra version so the bundle on disk is honest.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

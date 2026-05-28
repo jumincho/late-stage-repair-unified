@@ -1,3 +1,13 @@
+"""Tiny reporting helpers used by the generic `run_experiment` smoke flow.
+
+Two-function module — `load_result_jsonl` reads the per-example records
+written by `run_experiment.run_experiment` back into a DataFrame, and
+`write_tables` calls `evaluation.metrics.summarize_results` to roll those
+records up into a summary CSV plus a Markdown table. The Markdown drops the
+internal `dataset_key` column on the way out so the table is a clean public
+artifact.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

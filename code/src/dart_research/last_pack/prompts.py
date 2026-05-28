@@ -1,3 +1,12 @@
+"""Prompt bank for the `last_pack` format-domain collection.
+
+Loads the seven `.txt` prompts under `prompts/last_pack/` into a versioned
+dataclass — three for the planning bridge (direct, restart, suffix repair)
+and four for IFEval/IFBench (full rewrite, solve first, apply constraints,
+format-only patch). Each prompt carries its own version header so the row
+on disk pins exact prompt versions per method.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

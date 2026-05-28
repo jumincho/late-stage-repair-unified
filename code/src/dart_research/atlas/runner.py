@@ -1,3 +1,14 @@
+"""ATLAS fieldwise schema-to-code interface bank runner (math domain).
+
+Extends the OSCAR interface bank by collecting fieldwise schema probes:
+first run an operator/quantities probe, then run the field-semantics and
+field-quantities probes separately, and finally try a critical-field repair
+based on retrieved teacher exemplars. Each variant is recorded as one row in
+the per-example `ActionBankRecord`. Downstream rounds (`atlas_rg`, `cass`,
+`cass_r4`) layer on top of this runner by adding role tables, repair-only
+patches, and the f1 plan/execute heads.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

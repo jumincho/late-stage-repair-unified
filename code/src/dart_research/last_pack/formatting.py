@@ -1,3 +1,21 @@
+"""Format-domain evaluation, repair, and dataset loading helpers.
+
+Owns the format-domain (output-constraint) side of the last-pack module.
+Loads the upstream instruction-following datasets (IFEval, IFBench) via
+HuggingFace, dynamically imports the dataset's own `evaluation_lib.py`
+evaluator from a local checkout under `--ifeval-repo` / `--ifbench-repo`,
+and provides:
+
+- `load_instruction_dataset`, `load_instruction_eval_module`,
+- `evaluate_instruction_response` (runs the upstream evaluator),
+- `apply_instruction_patch` — deterministic format-only patch attempts,
+- `summarize_instruction_feedback` — text feedback for the LLM patch path,
+- `build_bridge_prompt`, `validate_bridge_response`, `classify_bridge_failure`
+  — same surface for the in-house `planning_bridge` task,
+- `parse_prompt_constraint_spec` — extract the constraint metadata used by
+  the unified `lace.unify` feature columns.
+"""
+
 from __future__ import annotations
 
 import importlib.util

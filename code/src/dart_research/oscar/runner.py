@@ -1,3 +1,17 @@
+"""`OSCARInterfaceBankRunner` — schema-compile-and-execute action bank.
+
+Extends `HEIRActionBankRunner` and records, for each math example:
+
+- `KEEP` (use the draft as-is),
+- `RAW_PYTHON` (LLM-emitted snippet through `eir.python_exec`),
+- `OPERATOR_SCHEMA_TO_CODE_BASE` — probe a schema, compile via the OSCAR
+  DSL, execute and record the value,
+- the same with constrained re-asks.
+
+This is the bridge round between the earlier free-form EIR / HEIR action
+banks and the structured ATLAS-style fieldwise schemas downstream.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

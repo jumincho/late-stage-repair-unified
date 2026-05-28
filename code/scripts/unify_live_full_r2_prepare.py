@@ -1,3 +1,27 @@
+"""Step 1 of the unified live full r2 pipeline: prepare the input bundle.
+
+This script does the upstream work of the final round (`r2` = round 2 of the
+unification effort): it pulls together the existing math and format manifests,
+reshards them into per-GPU work units, and writes a shared "feature bundle"
+that downstream collectors and the final report builder all consume.
+
+Inputs (all overridable via flags, with `DART_REPO_ROOT` defaults preserved
+for the closure reports):
+
+- Two math manifests — `cluster_main` (the cluster-hard slice) and
+  `generic_main` (the generic-hard slice).
+- Two format manifests — screened `ifeval` and full `ifbench`.
+
+Outputs:
+
+- `--output-dir` with sharded manifest files and the `split_seeds.json`.
+- `--report-path` markdown audit summarising counts and any drift.
+
+The list of split seeds (`R2_SPLIT_SEEDS`) is the seed-of-seeds for the final
+paired-bootstrap evaluation; changing it changes the stable triplet splits
+used by `evaluate_model_bank`.
+"""
+
 from __future__ import annotations
 import os
 

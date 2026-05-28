@@ -1,3 +1,13 @@
+"""Role-grounded schema helpers for ATLAS-RG and downstream CASS rounds.
+
+Holds the role priority list, the critical-role subset, the helpers that
+parse quantity rows out of the role-table probe output, and the field-level
+repair helpers (`repair_role_fields`, `repair_nonrole_fields`,
+`repair_critical_role_fields`). The same helpers are re-used by `cass.schema`
+via `repair_critical_role_patch` / `repair_nonrole_patch` / `repair_role_patch`
+so the downstream patch banks stay consistent with the upstream ATLAS round.
+"""
+
 from __future__ import annotations
 
 import re

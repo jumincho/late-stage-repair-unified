@@ -1,3 +1,15 @@
+"""Small numpy-only calibration primitives.
+
+Deliberately avoids scikit-learn so it stays light enough to load inside
+analysis notebooks. Provides:
+
+- `sigmoid`, `expected_calibration_error`, `brier_score`,
+- `auroc`, `aurc`, `average_precision`, `risk_coverage_curve`,
+- `LogisticCalibrator` plus `fit_logistic_calibrator`,
+- `choose_threshold_for_accuracy_rounds` — the per-stage selective-
+  classification threshold picker used by the confidence runner.
+"""
+
 from __future__ import annotations
 
 import math

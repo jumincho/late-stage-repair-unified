@@ -1,3 +1,18 @@
+"""CASS patch-bank runner (math domain).
+
+Extends `ATLASRGInterfaceBankRunner` with the named CASS patch operators:
+
+- `CASS_TARGET_POSTPROCESS_PATCH` — patch only target / postprocess fields,
+- `CASS_ROLE_PATCH` — patch only the role table,
+- `CASS_TARGET_POSTPROCESS_PLUS_ROLE_PATCH` — patch both,
+- `CASS_CRITICAL_ROLE_PATCH` — patch only the critical-role subset,
+- `CASS_NONROLE_PATCH` — patch everything except roles,
+- `TEACHER_PATCHED_BASELINE` — ground-truth ceiling using teacher patches.
+
+These are the local-repair operators that the final `unify_live_full_r2`
+math pipeline collapses into the single `LOCAL_REPAIR` action.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

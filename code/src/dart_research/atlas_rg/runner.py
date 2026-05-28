@@ -1,3 +1,17 @@
+"""ATLAS role-grounded interface bank runner (math domain).
+
+Extends the plain ATLAS runner with role-table-driven probes:
+
+- `ATLAS_RG_ROLETABLE_TO_CODE` builds the math program from the role table.
+- `ATLAS_RG_ROLE_REPAIR_ONLY` patches just the role table when the role
+  signature looks suspicious.
+- `ATLAS_RG_NONROLE_REPAIR_ONLY` patches the rest of the schema while
+  keeping the role table fixed.
+
+Each method records one `ActionBankRecord` row per problem; downstream CASS
+rounds reuse the role infrastructure by subclassing this runner.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

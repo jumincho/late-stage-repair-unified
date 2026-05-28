@@ -1,3 +1,18 @@
+"""Tolerant JSON extraction from messy LLM output.
+
+LLM responses regularly carry the JSON we want surrounded by prose, with
+trailing commas, or with single-token key/value corruptions. This module
+provides:
+
+- `_pre_fix_common_json_issues` — patch the most common key-quoting mistake,
+- `extract_first_json` — return the first JSON object/array in a string,
+  falling back through `json.loads`, the `json_repair` library, and a
+  regex-anchored brace scanner.
+
+Used by every client that has to parse structured tool output and by
+`last_pack.formatting` when it loads instruction-following inputs.
+"""
+
 from __future__ import annotations
 
 import json

@@ -1,3 +1,13 @@
+"""V-chase feature builders for arithmetic / math draft examples.
+
+V-chase ("value-chase") is the bridge layer that flattens the confidence /
+chase traces into the feature columns the downstream policy fitter
+consumes. Provides per-stage feature builders and the legacy
+`CURRENT_FEATURES_OLD` column list, plus the helper that pulls PRM scores
+out of `ProcessRewardModelScorer` and merges them in. The feature columns
+emitted here feed `lace.unify` and the final unified policy.
+"""
+
 from __future__ import annotations
 
 import ast

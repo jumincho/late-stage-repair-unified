@@ -1,3 +1,18 @@
+"""Prompt bank for EIR (Early-Intervention-Repair) math probes.
+
+EIR was the earliest math round in this codebase. Each probe/action pair
+asks the model a different question about its own draft:
+
+- `freeform_probe` / `freeform_action`,
+- `equation_probe` / `equation_action`,
+- `checklist_probe` / `checklist_action`,
+- `python_probe` / `python_action`,
+- `localize_probe` / `localize_action`.
+
+This module wraps the eleven `.txt` files under `prompts/eir/` into a
+versioned dataclass that `eir.runner.EIRActionBankRunner` loads once.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

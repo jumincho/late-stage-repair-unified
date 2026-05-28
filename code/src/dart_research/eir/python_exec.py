@@ -1,3 +1,14 @@
+"""Sandbox executor for the `PYTHON_RECOMPUTE` action.
+
+Compiles and runs an LLM-produced Python snippet inside a tightly-scoped
+namespace: `__builtins__` is replaced with a whitelist of safe primitives
+(`abs`, `min`, `max`, `sum`, `round`, `len`, `int`, `float`, `math`) so the
+snippet cannot reach the filesystem or network. Execution is wall-clock
+limited via `timeout_s`. The result dict contains the captured stdout, the
+exception class name if one was raised, and the final value of `result` if
+the snippet set it.
+"""
+
 from __future__ import annotations
 
 import ast

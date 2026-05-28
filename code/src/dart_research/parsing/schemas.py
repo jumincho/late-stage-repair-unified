@@ -1,3 +1,13 @@
+"""Pydantic response schemas used by the generic method pipelines.
+
+The structured-output contracts the generic `methods/pipelines.py` and the
+mock client expect to receive. One pydantic model per logical response
+shape: drafts, candidate sets, validation sets, rebuttals, selection
+decisions, defenses, self-refine critiques, freeform devil's advocate /
+rebuttal. Field validators coerce non-string values into strings so an LLM
+returning numbers where strings were expected still parses.
+"""
+
 from __future__ import annotations
 
 import json

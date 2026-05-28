@@ -1,3 +1,18 @@
+"""Text and answer normalization for paired correctness scoring.
+
+The single place that decides "are these two answers the same answer".
+Provides:
+
+- `normalize_text` — whitespace + case folding,
+- `normalize_yes_no` — fold yes/true/1 and no/false/0 onto canonical forms,
+- `extract_numeric` — pick the answer-shaped number out of free text,
+- `normalize_prediction` / `normalize_from_answer_fields` / `normalize_gold_answer`
+  — the entry points used by `evaluation.metrics.is_correct`.
+
+All of `is_correct`, the math runners, and the format evaluator rely on
+these normalizers, so changes here propagate to every reported number.
+"""
+
 from __future__ import annotations
 
 import re

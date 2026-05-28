@@ -1,3 +1,16 @@
+"""Prompt bank for the CASS round-4 (`cass_r4`) f1 plan-and-execute heads.
+
+`cass_r4` is the final math-domain round and the one whose collection script
+`scripts/cass_r4_collect.py` actually runs in the unified pipeline. It adds
+one new pair of heads on top of `cass_r2`:
+
+- `f1_plan` — first generate a high-fidelity plan,
+- `f1_execute` — then execute the plan to produce the patched answer.
+
+This module wraps `prompts/cass_r4/{f1_plan_v1.txt, f1_execute_v1.txt}` into
+a versioned dataclass.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

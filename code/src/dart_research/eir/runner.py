@@ -1,3 +1,17 @@
+"""`EIRActionBankRunner` — collect the named EIR repair action bank.
+
+The Early-Intervention-Repair runner. For each math example it drafts an
+answer (via `ChaseTraceRunner` to also collect confidence signals), then
+records the outcome of each named EIR action:
+
+- `FREEFORM_CRITIQUE`, `EQUATION_REDERIVE`, `CONSTRAINT_CHECKLIST`,
+  `PYTHON_RECOMPUTE`, `LOCALIZE_AND_PATCH`.
+
+Optionally scores stage reasoning with `ProcessRewardModelScorer`. The
+downstream `HEIRActionBankRunner` and `OSCARInterfaceBankRunner` extend
+this class.
+"""
+
 from __future__ import annotations
 
 from dataclasses import asdict

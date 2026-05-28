@@ -1,3 +1,19 @@
+"""`ChaseTraceRunner` — fixed-budget same-context challenge trace collector.
+
+Drives a local HF model through a fixed sequence of probe prompts on a
+single benchmark example:
+
+- initial draft,
+- verbalized-confidence-20 and verbalized-confidence-100 probes,
+- "challenge" question and a same-context revise,
+- self-refine critique and revise,
+- alternatives probe.
+
+Each step is recorded as a `StageTrace` so the downstream confidence /
+vchase analysis can stitch per-stage signals into trace-level features.
+This was the inner loop of the earlier confidence-focused rounds.
+"""
+
 from __future__ import annotations
 
 from dataclasses import asdict

@@ -1,3 +1,14 @@
+"""Prompt bank for the CASS round-2 (`cass_r2`) extension heads.
+
+`cass_r2` adds two new method heads on top of the CASS patch bank:
+
+- `F1_LITE` — a lightweight first-pass schema rebuild head,
+- `PRISM_LITE` — a lightweight prism-style multi-view check.
+
+Both are wrapped from `prompts/cass_r2/{f1_lite_v1.txt, prism_lite_v1.txt}`
+into a dataclass that `cass_r2.runner.CASSR2Runner` loads once.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

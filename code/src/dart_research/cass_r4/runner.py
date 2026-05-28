@@ -1,3 +1,11 @@
+"""CASS round-4 (`cass_r4`) runner: adds the f1 high-fidelity plan/execute head.
+
+Subclasses `CASSR2Runner` and appends a single `_f1_high_fidelity` probe /
+action pair to each `ActionBankRecord`, which is what `cass_r4_collect.py`
+calls into. This is the final math-side collection runner — its outputs feed
+the math half of the `unify_live_full_r2` unified frame.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path

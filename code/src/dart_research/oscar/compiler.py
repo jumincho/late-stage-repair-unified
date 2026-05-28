@@ -1,3 +1,20 @@
+"""Operator Schema Compiler-And-Runner ("OSCAR") for the math domain.
+
+Compiles an LLM-emitted operator schema into a Python program, evaluates
+it, and returns the numeric result. The DSL is a small whitelist
+(`ALLOWED_DSL_OPS` — `add`, `sub`, `mul`, `div`, `ceil_div`, `floor_div`,
+`remainder`, `next_multiple`, `complement`, `difference`, `percent_of`,
+`percent_left`, `avg`, ...) so the compiler can validate the schema before
+ever executing anything. Provides:
+
+- `parse_schema_fields` / `schema_to_preview` — schema (de)serialization,
+- `assign_semantic_cluster` — coarse cluster label for retrieval,
+- `deterministic_compile_and_execute` — the actual compile + run step.
+
+Every math runner downstream of OSCAR (heir, atlas, atlas_rg, cass,
+cass_r2, cass_r4) reaches into this module for its compile step.
+"""
+
 from __future__ import annotations
 
 import ast
