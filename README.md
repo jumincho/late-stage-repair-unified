@@ -16,6 +16,12 @@
 
 > 🧊 **휴면(dormant) 중인 연구 파일럿입니다.**
 
+## ⭐ 핵심 결과 (TL;DR)
+
+- **"마지막 단계만 살짝 고치기"가 "처음부터 다시 쓰기"를 일관되게 이겼습니다** — 수학·출력제약 두 도메인 모두에서.
+- **두 도메인은 거의 같은 결정 규칙을 공유**했습니다 — 도메인별 맞춤 규칙과 단일 공유 규칙의 격차가 매우 작았습니다.
+- 단 **"단 하나의 보편 규칙이 항상 최선"까지는 아니었고**, 모델이 커질수록 이득의 절대 크기는 줄었습니다.
+
 ## 무엇을 보려던 연구였나
 
 언어모델이 어려운 문제를 풀다가 마지막에 답을 만들 때 종종 작은 실수를 합니다. 그 실수를 고치려고 답을 처음부터 다시 쓰게 하는 건 비싸고 종종 멀쩡한 부분까지 망가뜨립니다.
@@ -122,6 +128,12 @@ export DART_REPO_ROOT="$(pwd)"   # 또는 원하는 절대 경로
 ## English
 
 > 🧊 **Dormant research pilot.**
+
+### ⭐ Key result (TL;DR)
+
+- **Patching just the last step beat full rewrites — consistently, in both the math and output-constraint domains.**
+- The **two domains shared nearly the same decision rule**; per-domain tuning barely improved on one shared rule.
+- But it's **not a single universal best rule** — and the absolute gain shrinks as models scale up.
 
 ### What this set out to test
 
