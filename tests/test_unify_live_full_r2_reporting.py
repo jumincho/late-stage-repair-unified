@@ -1,3 +1,5 @@
+"""Tests for unify_live_full_r2 report generation: verifies that make_reports produces all expected output files and tables."""
+
 from __future__ import annotations
 
 import json

@@ -58,11 +58,12 @@
 
 ## 重启时先看哪里
 
-- 📖 [`GLOSSARY.md`](GLOSSARY.md) —— 把代码与关闭报告里出现的内部术语(`cass_r4`、`last_pack`、`unify_live_full_r2`、`DART_REPO_ROOT`、三个动作名等)翻成日常用语的对照表
-- 🇬🇧 [`REPORT_PROJECT_SUMMARY_EN.md`](REPORT_PROJECT_SUMMARY_EN.md) —— 一篇完整篇幅的最终报告,建议第一个看
+- 📖 [`GLOSSARY.md`](GLOSSARY.md) —— 把代码与关闭报告里出现的内部术语(`cass_r4`、`last_pack`、`unify_live_full_r2`、`DART_REPO_ROOT`、三个动作名,以及 `frozen_context/` 与 `final/` 目录的区别等)翻成日常用语的对照表
+- 🇰🇷 [`REPORT_PROJECT_SUMMARY_KO.md`](REPORT_PROJECT_SUMMARY_KO.md) —— 韩语版完整最终报告
+- 🇬🇧 [`REPORT_PROJECT_SUMMARY_EN.md`](REPORT_PROJECT_SUMMARY_EN.md) —— 英语版完整最终报告,建议第一个看
 - [`reports/final/`](reports/final/) —— 按领域分的最终报告,以及把两个领域合到一起的统一报告
 - [`reports/frozen_context/`](reports/frozen_context/) —— 在合并到一起之前的语境(数学侧、格式侧)
-- [`logs/research_log.md`](logs/research_log.md),[`logs/decision_log.md`](logs/decision_log.md) —— 决策与思路演化的时间线
+- [`logs/research_log.md`](logs/research_log.md)、[`logs/decision_log.md`](logs/decision_log.md) —— 决策与思路演化的时间线
 
 ## 代码地图
 
