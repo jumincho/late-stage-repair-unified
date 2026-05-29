@@ -61,10 +61,10 @@ dart_research/
 ├── unify_live_full_r2.py           cross-domain entry point and report writers
 ├── run_experiment.py               generic smoke / regression harness
 ├── lace/                           three-action policy + unified frame builder
-├── cass/, cass_r2/, cass_r4/, cass_bd/   math-domain runners (each round)
+├── cass/, cass_r2/, cass_r4/   math-domain runners (each round); cass_bd/ contains analysis.py only (historical analysis helper, no runner)
 ├── atlas/, atlas_rg/, atlas_ms/    math schema layers (each round)
-├── oscar/, tier/, heir/, eir/      earlier math probe / compile layers
-├── last_pack/                      format-domain runner + dataset loaders
+├── oscar/, heir/, eir/             earlier math probe / compile layers (runner.py present); tier/ has prompts.py only — its runner logic is subsumed by oscar/
+├── last_pack/                      format-domain helpers: formatting.py, math_analysis.py, planning.py, prompts.py (no runner.py; collection driven by code/scripts/last_pack_collect_format.py)
 ├── confidence/, vchase/            confidence traces and bridge features
 ├── clients/                        hf_local / vllm / openai / mock backends
 ├── datasets/                       benchmark loaders

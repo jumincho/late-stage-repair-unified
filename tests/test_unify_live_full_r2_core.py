@@ -1,3 +1,5 @@
+"""Tests for core unify_live_full_r2 logic: feature-bundle preparation and audit_bank integrity checks."""
+
 from __future__ import annotations
 
 import json
